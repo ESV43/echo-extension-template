@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   build:
@@ -32,16 +33,24 @@ jobs:
           echo "VERSION=v$version" >> $GITHUB_ENV
           echo -e "## ${{ env.NAME }}\n${{ github.event.head_commit.message }}" > commit.txt
           echo "APP_PATH=app/build/${{ env.TAG }}-$version.eapk" >> $GITHUB_ENV
-          echo "${{ secrets.KEYSTORE_B64 }}" | base64 -d > $GITHUB_WORKSPACE/signing-key.jks
+          if [ -n "${{ secrets.KEYSTORE_B64 }}" ]; then
+            echo "${{ secrets.KEYSTORE_B64 }}" | base64 -d > $GITHUB_WORKSPACE/signing-key.jks
+          fi
           chmod +x ./gradlew
 
       - name: Build with Gradle
         run: |
-          ./gradlew assembleDebug \
-          -Pandroid.injected.signing.store.file=$GITHUB_WORKSPACE/signing-key.jks \
-          -Pandroid.injected.signing.store.password=${{ secrets.PASSWORD }} \
-          -Pandroid.injected.signing.key.alias=key0 \
-          -Pandroid.injected.signing.key.password=${{ secrets.PASSWORD }}
+          if [ -f "$GITHUB_WORKSPACE/signing-key.jks" ]; then
+            echo "Building with custom signing key..."
+            ./gradlew assembleDebug \
+              -Pandroid.injected.signing.store.file=$GITHUB_WORKSPACE/signing-key.jks \
+              -Pandroid.injected.signing.store.password=${{ secrets.PASSWORD }} \
+              -Pandroid.injected.signing.key.alias=key0 \
+              -Pandroid.injected.signing.key.password=${{ secrets.PASSWORD }}
+          else
+            echo "Building with default debug signing..."
+            ./gradlew assembleDebug
+          fi
           
           cp app/build/outputs/apk/debug/app-debug.apk ${{ env.APP_PATH }}
 

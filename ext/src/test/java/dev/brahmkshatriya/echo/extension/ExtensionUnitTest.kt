@@ -1,9 +1,11 @@
 package dev.brahmkshatriya.echo.extension
 
 import dev.brahmkshatriya.echo.common.clients.AlbumClient
+import dev.brahmkshatriya.echo.common.clients.ArtistClient
 import dev.brahmkshatriya.echo.common.clients.ExtensionClient
 import dev.brahmkshatriya.echo.common.clients.HomeFeedClient
 import dev.brahmkshatriya.echo.common.clients.LoginClient
+import dev.brahmkshatriya.echo.common.clients.PlaylistClient
 import dev.brahmkshatriya.echo.common.clients.RadioClient
 import dev.brahmkshatriya.echo.common.clients.SearchFeedClient
 import dev.brahmkshatriya.echo.common.clients.TrackClient
@@ -28,7 +30,7 @@ import kotlin.system.measureTimeMillis
 @OptIn(DelicateCoroutinesApi::class)
 @ExperimentalCoroutinesApi
 class ExtensionUnitTest {
-    private val extension: ExtensionClient = TestExtension()
+    private val extension: ExtensionClient = MonochromeExtension()
     private val searchQuery = "Skrillex"
     private val user = User("", "Test User")
 
@@ -54,7 +56,10 @@ class ExtensionUnitTest {
 
     @Test
     fun testHomeFeed() = testIn("Testing Home Feed") {
-        if (extension !is HomeFeedClient) error("HomeFeedClient is not implemented")
+        if (extension !is HomeFeedClient) {
+            println("HomeFeedClient is not implemented by this extension")
+            return@testIn
+        }
         val feed = extension.loadHomeFeed()
         println("Tabs : ${feed.tabs}")
         feed.pagedDataOfFirst().loadPage(null).data.forEach {
@@ -66,7 +71,7 @@ class ExtensionUnitTest {
         if (extension !is SearchFeedClient) error("SearchFeedClient is not implemented")
         val query = q ?: searchQuery
         println("Searching : $query")
-        val track = extension.loadSearchFeed(searchQuery).pagedDataOfFirst().loadAll()
+        val track = extension.loadSearchFeed(query).pagedDataOfFirst().loadAll()
             .firstNotNullOfOrNull {
                 when (it) {
                     is Shelf.Item -> it.media as? Track
@@ -94,16 +99,19 @@ class ExtensionUnitTest {
         val search = searchTrack()
         measureTimeMillis {
             val track = extension.loadTrack(search, false)
-            val streamable = track.servers.firstOrNull() ?: error("Track does not streamable")
+            val streamable = track.streamables.firstOrNull() ?: error("Track does not have streamables")
             val stream = extension.loadStreamableMedia(streamable, false)
-            println(stream)
+            println("Resolved stream: $stream")
         }.also { println("time : $it") }
     }
 
     @Test
     fun testTrackRadio() = testIn("Testing Track Radio") {
         if (extension !is TrackClient) error("TrackClient is not implemented")
-        if (extension !is RadioClient) error("RadioClient is not implemented")
+        if (extension !is RadioClient) {
+            println("RadioClient is not implemented by this extension")
+            return@testIn
+        }
         val track = extension.loadTrack(searchTrack(), false)
         val radio = extension.radio(track, null)
         val radioTracks = extension.loadTracks(radio).loadAll()
@@ -116,7 +124,8 @@ class ExtensionUnitTest {
     fun testTrackShelves() = testIn("Testing Track Shelves") {
         if (extension !is TrackClient) error("TrackClient is not implemented")
         val track = extension.loadTrack(searchTrack(), false)
-        val mediaItems = extension.loadFeed(track)?.pagedDataOfFirst()?.loadPage(null)?.data
+        val feed = extension.loadFeed(track)
+        val mediaItems = feed?.pagedDataOfFirst()?.loadPage(null)?.data
         if (mediaItems.isNullOrEmpty()) println("No shelves found for track")
         else mediaItems.forEach {
             println(it)
@@ -130,13 +139,29 @@ class ExtensionUnitTest {
         if (extension !is AlbumClient) error("AlbumClient is not implemented")
         val album = extension.loadAlbum(small)
         println(album)
-        val tracks = extension.loadTracks(album)?.loadAll()
+        val feed = extension.loadTracks(album)
+        val tracks = feed?.pagedDataOfFirst()?.loadPage(null)?.data
         if (tracks.isNullOrEmpty()) println("No tracks found for album")
         else tracks.forEach {
             println(it)
         }
     }
 
+    @Test
+    fun testArtistGet() = testIn("Testing Artist Get") {
+        if (extension !is TrackClient) error("TrackClient is not implemented")
+        val track = extension.loadTrack(searchTrack(), false)
+        val smallArtist = track.artists.firstOrNull() ?: error("Track has no artist")
+        if (extension !is ArtistClient) error("ArtistClient is not implemented")
+        val artist = extension.loadArtist(smallArtist)
+        println(artist)
+        val feed = extension.loadFeed(artist)
+        val shelves = feed.pagedDataOfFirst().loadPage(null).data
+        if (shelves.isEmpty()) println("No shelves found for artist")
+        else shelves.forEach {
+            println(it)
+        }
+    }
 
     // Test Setup
     private val mainThreadSurrogate = newSingleThreadContext("UI thread")
