@@ -43,10 +43,10 @@ Methods:
   public int hashCode()
   public dev.brahmkshatriya.echo.common.helpers.Injectable getInstance()
   public final dev.brahmkshatriya.echo.common.LyricsExtension copy(dev.brahmkshatriya.echo.common.models.Metadata, dev.brahmkshatriya.echo.common.helpers.Injectable)
-  public dev.brahmkshatriya.echo.common.models.Metadata getMetadata()
+  public static dev.brahmkshatriya.echo.common.LyricsExtension copy$default(dev.brahmkshatriya.echo.common.LyricsExtension, dev.brahmkshatriya.echo.common.models.Metadata, dev.brahmkshatriya.echo.common.helpers.Injectable, int, java.lang.Object)
   public final dev.brahmkshatriya.echo.common.models.Metadata component1()
   public final dev.brahmkshatriya.echo.common.helpers.Injectable component2()
-  public static dev.brahmkshatriya.echo.common.LyricsExtension copy$default(dev.brahmkshatriya.echo.common.LyricsExtension, dev.brahmkshatriya.echo.common.models.Metadata, dev.brahmkshatriya.echo.common.helpers.Injectable, int, java.lang.Object)
+  public dev.brahmkshatriya.echo.common.models.Metadata getMetadata()
 ========================================
 
 ========================================
@@ -68,10 +68,10 @@ Methods:
   public int hashCode()
   public dev.brahmkshatriya.echo.common.helpers.Injectable getInstance()
   public final dev.brahmkshatriya.echo.common.MiscExtension copy(dev.brahmkshatriya.echo.common.models.Metadata, dev.brahmkshatriya.echo.common.helpers.Injectable)
-  public dev.brahmkshatriya.echo.common.models.Metadata getMetadata()
+  public static dev.brahmkshatriya.echo.common.MiscExtension copy$default(dev.brahmkshatriya.echo.common.MiscExtension, dev.brahmkshatriya.echo.common.models.Metadata, dev.brahmkshatriya.echo.common.helpers.Injectable, int, java.lang.Object)
   public final dev.brahmkshatriya.echo.common.models.Metadata component1()
   public final dev.brahmkshatriya.echo.common.helpers.Injectable component2()
-  public static dev.brahmkshatriya.echo.common.MiscExtension copy$default(dev.brahmkshatriya.echo.common.MiscExtension, dev.brahmkshatriya.echo.common.models.Metadata, dev.brahmkshatriya.echo.common.helpers.Injectable, int, java.lang.Object)
+  public dev.brahmkshatriya.echo.common.models.Metadata getMetadata()
 ========================================
 
 ========================================
@@ -93,10 +93,10 @@ Methods:
   public int hashCode()
   public dev.brahmkshatriya.echo.common.helpers.Injectable getInstance()
   public final dev.brahmkshatriya.echo.common.MusicExtension copy(dev.brahmkshatriya.echo.common.models.Metadata, dev.brahmkshatriya.echo.common.helpers.Injectable)
-  public dev.brahmkshatriya.echo.common.models.Metadata getMetadata()
+  public static dev.brahmkshatriya.echo.common.MusicExtension copy$default(dev.brahmkshatriya.echo.common.MusicExtension, dev.brahmkshatriya.echo.common.models.Metadata, dev.brahmkshatriya.echo.common.helpers.Injectable, int, java.lang.Object)
   public final dev.brahmkshatriya.echo.common.models.Metadata component1()
   public final dev.brahmkshatriya.echo.common.helpers.Injectable component2()
-  public static dev.brahmkshatriya.echo.common.MusicExtension copy$default(dev.brahmkshatriya.echo.common.MusicExtension, dev.brahmkshatriya.echo.common.models.Metadata, dev.brahmkshatriya.echo.common.helpers.Injectable, int, java.lang.Object)
+  public dev.brahmkshatriya.echo.common.models.Metadata getMetadata()
 ========================================
 
 ========================================
@@ -118,10 +118,10 @@ Methods:
   public int hashCode()
   public dev.brahmkshatriya.echo.common.helpers.Injectable getInstance()
   public final dev.brahmkshatriya.echo.common.TrackerExtension copy(dev.brahmkshatriya.echo.common.models.Metadata, dev.brahmkshatriya.echo.common.helpers.Injectable)
-  public dev.brahmkshatriya.echo.common.models.Metadata getMetadata()
+  public static dev.brahmkshatriya.echo.common.TrackerExtension copy$default(dev.brahmkshatriya.echo.common.TrackerExtension, dev.brahmkshatriya.echo.common.models.Metadata, dev.brahmkshatriya.echo.common.helpers.Injectable, int, java.lang.Object)
   public final dev.brahmkshatriya.echo.common.models.Metadata component1()
   public final dev.brahmkshatriya.echo.common.helpers.Injectable component2()
-  public static dev.brahmkshatriya.echo.common.TrackerExtension copy$default(dev.brahmkshatriya.echo.common.TrackerExtension, dev.brahmkshatriya.echo.common.models.Metadata, dev.brahmkshatriya.echo.common.helpers.Injectable, int, java.lang.Object)
+  public dev.brahmkshatriya.echo.common.models.Metadata getMetadata()
 ========================================
 
 ========================================
@@ -135,9 +135,9 @@ Constructors:
 Fields:
 
 Methods:
+  public abstract java.lang.Object loadFeed(dev.brahmkshatriya.echo.common.models.Album, kotlin.coroutines.Continuation)
   public abstract java.lang.Object loadAlbum(dev.brahmkshatriya.echo.common.models.Album, kotlin.coroutines.Continuation)
   public abstract java.lang.Object loadTracks(dev.brahmkshatriya.echo.common.models.Album, kotlin.coroutines.Continuation)
-  public abstract java.lang.Object loadFeed(dev.brahmkshatriya.echo.common.models.Album, kotlin.coroutines.Continuation)
 ========================================
 
 ========================================
@@ -151,8 +151,8 @@ Constructors:
 Fields:
 
 Methods:
-  public abstract java.lang.Object loadArtist(dev.brahmkshatriya.echo.common.models.Artist, kotlin.coroutines.Continuation)
   public abstract java.lang.Object loadFeed(dev.brahmkshatriya.echo.common.models.Artist, kotlin.coroutines.Continuation)
+  public abstract java.lang.Object loadArtist(dev.brahmkshatriya.echo.common.models.Artist, kotlin.coroutines.Continuation)
 ========================================
 
 ========================================
@@ -188,8 +188,8 @@ Constructors:
 Fields:
 
 Methods:
-  public static java.lang.Object onExtensionSelected(dev.brahmkshatriya.echo.common.clients.DownloadClient, kotlin.coroutines.Continuation)
   public static java.lang.Object onInitialize(dev.brahmkshatriya.echo.common.clients.DownloadClient, kotlin.coroutines.Continuation)
+  public static java.lang.Object onExtensionSelected(dev.brahmkshatriya.echo.common.clients.DownloadClient, kotlin.coroutines.Continuation)
 ========================================
 
 ========================================
@@ -203,12 +203,12 @@ Constructors:
 Fields:
 
 Methods:
+  public java.lang.Object onInitialize(kotlin.coroutines.Continuation)
+  public static java.lang.Object onInitialize$suspendImpl(dev.brahmkshatriya.echo.common.clients.ExtensionClient, kotlin.coroutines.Continuation)
   public static java.lang.Object access$onExtensionSelected$jd(dev.brahmkshatriya.echo.common.clients.ExtensionClient, kotlin.coroutines.Continuation)
   public static java.lang.Object access$onInitialize$jd(dev.brahmkshatriya.echo.common.clients.ExtensionClient, kotlin.coroutines.Continuation)
   public java.lang.Object onExtensionSelected(kotlin.coroutines.Continuation)
   public static java.lang.Object onExtensionSelected$suspendImpl(dev.brahmkshatriya.echo.common.clients.ExtensionClient, kotlin.coroutines.Continuation)
-  public java.lang.Object onInitialize(kotlin.coroutines.Continuation)
-  public static java.lang.Object onInitialize$suspendImpl(dev.brahmkshatriya.echo.common.clients.ExtensionClient, kotlin.coroutines.Continuation)
 ========================================
 
 ========================================
@@ -222,8 +222,8 @@ Constructors:
 Fields:
 
 Methods:
-  public static java.lang.Object onExtensionSelected(dev.brahmkshatriya.echo.common.clients.ExtensionClient, kotlin.coroutines.Continuation)
   public static java.lang.Object onInitialize(dev.brahmkshatriya.echo.common.clients.ExtensionClient, kotlin.coroutines.Continuation)
+  public static java.lang.Object onExtensionSelected(dev.brahmkshatriya.echo.common.clients.ExtensionClient, kotlin.coroutines.Continuation)
 ========================================
 
 ========================================
@@ -352,12 +352,12 @@ Methods:
   public int hashCode()
   public final java.lang.String getKey()
   public final dev.brahmkshatriya.echo.common.clients.LoginClient$Form copy(java.lang.String, java.lang.String, dev.brahmkshatriya.echo.common.clients.LoginClient$InputField$Type, java.util.List)
-  public final dev.brahmkshatriya.echo.common.clients.LoginClient$InputField$Type getIcon()
+  public static dev.brahmkshatriya.echo.common.clients.LoginClient$Form copy$default(dev.brahmkshatriya.echo.common.clients.LoginClient$Form, java.lang.String, java.lang.String, dev.brahmkshatriya.echo.common.clients.LoginClient$InputField$Type, java.util.List, int, java.lang.Object)
   public final java.lang.String component1()
   public final java.lang.String component2()
   public final dev.brahmkshatriya.echo.common.clients.LoginClient$InputField$Type component3()
   public final java.util.List component4()
-  public static dev.brahmkshatriya.echo.common.clients.LoginClient$Form copy$default(dev.brahmkshatriya.echo.common.clients.LoginClient$Form, java.lang.String, java.lang.String, dev.brahmkshatriya.echo.common.clients.LoginClient$InputField$Type, java.util.List, int, java.lang.Object)
+  public final dev.brahmkshatriya.echo.common.clients.LoginClient$InputField$Type getIcon()
   public final java.util.List getInputFields()
 ========================================
 
@@ -386,14 +386,14 @@ Methods:
   public final java.lang.String getKey()
   public final dev.brahmkshatriya.echo.common.clients.LoginClient$InputField$Type getType()
   public final dev.brahmkshatriya.echo.common.clients.LoginClient$InputField copy(dev.brahmkshatriya.echo.common.clients.LoginClient$InputField$Type, java.lang.String, java.lang.String, boolean, kotlin.text.Regex)
+  public static dev.brahmkshatriya.echo.common.clients.LoginClient$InputField copy$default(dev.brahmkshatriya.echo.common.clients.LoginClient$InputField, dev.brahmkshatriya.echo.common.clients.LoginClient$InputField$Type, java.lang.String, java.lang.String, boolean, kotlin.text.Regex, int, java.lang.Object)
   public final dev.brahmkshatriya.echo.common.clients.LoginClient$InputField$Type component1()
   public final java.lang.String component2()
   public final java.lang.String component3()
   public final boolean component4()
   public final kotlin.text.Regex component5()
-  public static dev.brahmkshatriya.echo.common.clients.LoginClient$InputField copy$default(dev.brahmkshatriya.echo.common.clients.LoginClient$InputField, dev.brahmkshatriya.echo.common.clients.LoginClient$InputField$Type, java.lang.String, java.lang.String, boolean, kotlin.text.Regex, int, java.lang.Object)
-  public final boolean isRequired()
   public final kotlin.text.Regex getRegex()
+  public final boolean isRequired()
 ========================================
 
 ========================================
@@ -464,8 +464,8 @@ Constructors:
 Fields:
 
 Methods:
-  public static java.lang.Object onExtensionSelected(dev.brahmkshatriya.echo.common.clients.LyricsClient, kotlin.coroutines.Continuation)
   public static java.lang.Object onInitialize(dev.brahmkshatriya.echo.common.clients.LyricsClient, kotlin.coroutines.Continuation)
+  public static java.lang.Object onExtensionSelected(dev.brahmkshatriya.echo.common.clients.LyricsClient, kotlin.coroutines.Continuation)
 ========================================
 
 ========================================
@@ -495,8 +495,8 @@ Constructors:
 Fields:
 
 Methods:
-  public static java.lang.Object onExtensionSelected(dev.brahmkshatriya.echo.common.clients.LyricsSearchClient, kotlin.coroutines.Continuation)
   public static java.lang.Object onInitialize(dev.brahmkshatriya.echo.common.clients.LyricsSearchClient, kotlin.coroutines.Continuation)
+  public static java.lang.Object onExtensionSelected(dev.brahmkshatriya.echo.common.clients.LyricsSearchClient, kotlin.coroutines.Continuation)
 ========================================
 
 ========================================
@@ -510,9 +510,9 @@ Constructors:
 Fields:
 
 Methods:
+  public abstract java.lang.Object loadFeed(dev.brahmkshatriya.echo.common.models.Playlist, kotlin.coroutines.Continuation)
   public abstract java.lang.Object loadTracks(dev.brahmkshatriya.echo.common.models.Playlist, kotlin.coroutines.Continuation)
   public abstract java.lang.Object loadPlaylist(dev.brahmkshatriya.echo.common.models.Playlist, kotlin.coroutines.Continuation)
-  public abstract java.lang.Object loadFeed(dev.brahmkshatriya.echo.common.models.Playlist, kotlin.coroutines.Continuation)
 ========================================
 
 ========================================
@@ -589,8 +589,8 @@ Constructors:
 Fields:
 
 Methods:
-  public abstract java.lang.Object quickSearch(java.lang.String, kotlin.coroutines.Continuation)
   public abstract java.lang.Object deleteQuickSearch(dev.brahmkshatriya.echo.common.models.QuickSearchItem, kotlin.coroutines.Continuation)
+  public abstract java.lang.Object quickSearch(java.lang.String, kotlin.coroutines.Continuation)
 ========================================
 
 ========================================
@@ -604,9 +604,9 @@ Constructors:
 Fields:
 
 Methods:
-  public abstract java.lang.Object loadTracks(dev.brahmkshatriya.echo.common.models.Radio, kotlin.coroutines.Continuation)
-  public abstract java.lang.Object loadRadio(dev.brahmkshatriya.echo.common.models.Radio, kotlin.coroutines.Continuation)
   public abstract java.lang.Object radio(dev.brahmkshatriya.echo.common.models.EchoMediaItem, dev.brahmkshatriya.echo.common.models.EchoMediaItem, kotlin.coroutines.Continuation)
+  public abstract java.lang.Object loadRadio(dev.brahmkshatriya.echo.common.models.Radio, kotlin.coroutines.Continuation)
+  public abstract java.lang.Object loadTracks(dev.brahmkshatriya.echo.common.models.Radio, kotlin.coroutines.Continuation)
 ========================================
 
 ========================================
@@ -707,10 +707,10 @@ Constructors:
 Fields:
 
 Methods:
-  public abstract java.lang.Object onTrackChanged(dev.brahmkshatriya.echo.common.models.TrackDetails, kotlin.coroutines.Continuation)
-  public abstract java.lang.Object onPlayingStateChanged(dev.brahmkshatriya.echo.common.models.TrackDetails, boolean, kotlin.coroutines.Continuation)
   public static java.lang.Object access$onExtensionSelected$jd(dev.brahmkshatriya.echo.common.clients.TrackerClient, kotlin.coroutines.Continuation)
   public static java.lang.Object access$onInitialize$jd(dev.brahmkshatriya.echo.common.clients.TrackerClient, kotlin.coroutines.Continuation)
+  public abstract java.lang.Object onTrackChanged(dev.brahmkshatriya.echo.common.models.TrackDetails, kotlin.coroutines.Continuation)
+  public abstract java.lang.Object onPlayingStateChanged(dev.brahmkshatriya.echo.common.models.TrackDetails, boolean, kotlin.coroutines.Continuation)
 ========================================
 
 ========================================
@@ -724,8 +724,8 @@ Constructors:
 Fields:
 
 Methods:
-  public static java.lang.Object onExtensionSelected(dev.brahmkshatriya.echo.common.clients.TrackerClient, kotlin.coroutines.Continuation)
   public static java.lang.Object onInitialize(dev.brahmkshatriya.echo.common.clients.TrackerClient, kotlin.coroutines.Continuation)
+  public static java.lang.Object onExtensionSelected(dev.brahmkshatriya.echo.common.clients.TrackerClient, kotlin.coroutines.Continuation)
 ========================================
 
 ========================================
@@ -739,10 +739,10 @@ Constructors:
 Fields:
 
 Methods:
-  public abstract java.lang.Object getMarkAsPlayedDuration(dev.brahmkshatriya.echo.common.models.TrackDetails, kotlin.coroutines.Continuation)
-  public abstract java.lang.Object onMarkAsPlayed(dev.brahmkshatriya.echo.common.models.TrackDetails, kotlin.coroutines.Continuation)
   public static java.lang.Object access$onExtensionSelected$jd(dev.brahmkshatriya.echo.common.clients.TrackerMarkClient, kotlin.coroutines.Continuation)
   public static java.lang.Object access$onInitialize$jd(dev.brahmkshatriya.echo.common.clients.TrackerMarkClient, kotlin.coroutines.Continuation)
+  public abstract java.lang.Object getMarkAsPlayedDuration(dev.brahmkshatriya.echo.common.models.TrackDetails, kotlin.coroutines.Continuation)
+  public abstract java.lang.Object onMarkAsPlayed(dev.brahmkshatriya.echo.common.models.TrackDetails, kotlin.coroutines.Continuation)
 ========================================
 
 ========================================
@@ -756,8 +756,8 @@ Constructors:
 Fields:
 
 Methods:
-  public static java.lang.Object onExtensionSelected(dev.brahmkshatriya.echo.common.clients.TrackerMarkClient, kotlin.coroutines.Continuation)
   public static java.lang.Object onInitialize(dev.brahmkshatriya.echo.common.clients.TrackerMarkClient, kotlin.coroutines.Continuation)
+  public static java.lang.Object onExtensionSelected(dev.brahmkshatriya.echo.common.clients.TrackerMarkClient, kotlin.coroutines.Continuation)
 ========================================
 
 ========================================
@@ -855,8 +855,8 @@ Constructors:
 Fields:
 
 Methods:
-  public final java.lang.Object await(okhttp3.Call, kotlin.coroutines.Continuation)
   private final java.lang.Object await$$forInline(okhttp3.Call, kotlin.coroutines.Continuation)
+  public final java.lang.Object await(okhttp3.Call, kotlin.coroutines.Continuation)
 ========================================
 
 ========================================
@@ -878,10 +878,10 @@ Fields:
 Methods:
   public final java.lang.Object getValue()
   public final kotlin.Lazy getData()
-  public final java.lang.Object injectOrRun(java.lang.String, kotlin.jvm.functions.Function2, kotlin.coroutines.Continuation)
-  public final dev.brahmkshatriya.echo.common.helpers.Injectable casted()
   private static final kotlin.Result data$lambda$1(dev.brahmkshatriya.echo.common.helpers.Injectable)
   public final java.lang.Object value-IoAF18A(kotlin.coroutines.Continuation)
+  public final java.lang.Object injectOrRun(java.lang.String, kotlin.jvm.functions.Function2, kotlin.coroutines.Continuation)
+  public final dev.brahmkshatriya.echo.common.helpers.Injectable casted()
 ========================================
 
 ========================================
@@ -979,10 +979,10 @@ Methods:
   public int hashCode()
   public final dev.brahmkshatriya.echo.common.helpers.Page copy(java.util.List, java.lang.String)
   public final java.util.List getData()
-  public final java.util.List component1()
-  public final java.lang.String component2()
   public static dev.brahmkshatriya.echo.common.helpers.Page copy$default(dev.brahmkshatriya.echo.common.helpers.Page, java.util.List, java.lang.String, int, java.lang.Object)
   public static final void write$Self$common(dev.brahmkshatriya.echo.common.helpers.Page, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor, kotlinx.serialization.KSerializer)
+  public final java.util.List component1()
+  public final java.lang.String component2()
   public final java.lang.String getContinuation()
 ========================================
 
@@ -993,8 +993,8 @@ Superclass: java.lang.Object
 Interfaces: kotlinx.serialization.internal.GeneratedSerializer
 
 Constructors:
-  private $serializer()
   public $serializer(kotlinx.serialization.KSerializer)
+  private $serializer()
 
 Fields:
   private final kotlinx.serialization.descriptors.SerialDescriptor descriptor
@@ -1003,12 +1003,12 @@ Fields:
 Methods:
   public final kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
   private final kotlinx.serialization.KSerializer getTypeSerial0()
-  public final [Lkotlinx.serialization.KSerializer; childSerializers()
-  public final [Lkotlinx.serialization.KSerializer; typeParametersSerializers()
   public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
   public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.helpers.Page)
-  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
   public final dev.brahmkshatriya.echo.common.helpers.Page deserialize(kotlinx.serialization.encoding.Decoder)
+  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+  public final [Lkotlinx.serialization.KSerializer; childSerializers()
+  public final [Lkotlinx.serialization.KSerializer; typeParametersSerializers()
 ========================================
 
 ========================================
@@ -1044,11 +1044,11 @@ Fields:
 Methods:
   public abstract void clear()
   public abstract dev.brahmkshatriya.echo.common.helpers.PagedData map(kotlin.jvm.functions.Function2)
-  public final java.lang.Object loadAll(kotlin.coroutines.Continuation)
-  public abstract void invalidate(java.lang.String)
   public final java.lang.Object loadPage(java.lang.String, kotlin.coroutines.Continuation)
   public abstract java.lang.Object loadAllInternal(kotlin.coroutines.Continuation)
   public abstract java.lang.Object loadListInternal(java.lang.String, kotlin.coroutines.Continuation)
+  public final java.lang.Object loadAll(kotlin.coroutines.Continuation)
+  public abstract void invalidate(java.lang.String)
 ========================================
 
 ========================================
@@ -1102,10 +1102,10 @@ Methods:
   public void clear()
   public dev.brahmkshatriya.echo.common.helpers.PagedData map(kotlin.jvm.functions.Function2)
   private final java.lang.String combine(int, java.lang.String)
-  public void invalidate(java.lang.String)
   private final kotlin.Pair splitContinuation(java.lang.String)
   public java.lang.Object loadAllInternal(kotlin.coroutines.Continuation)
   public java.lang.Object loadListInternal(java.lang.String, kotlin.coroutines.Continuation)
+  public void invalidate(java.lang.String)
 ========================================
 
 ========================================
@@ -1174,10 +1174,10 @@ Fields:
 Methods:
   public void clear()
   public dev.brahmkshatriya.echo.common.helpers.PagedData map(kotlin.jvm.functions.Function2)
-  public void invalidate(java.lang.String)
   public final kotlin.jvm.functions.Function2 getLoad()
   public java.lang.Object loadAllInternal(kotlin.coroutines.Continuation)
   public java.lang.Object loadListInternal(java.lang.String, kotlin.coroutines.Continuation)
+  public void invalidate(java.lang.String)
 ========================================
 
 ========================================
@@ -1267,13 +1267,13 @@ Fields:
 Methods:
   public void clear()
   public dev.brahmkshatriya.echo.common.helpers.PagedData map(kotlin.jvm.functions.Function2)
-  public void invalidate(java.lang.String)
+  public static final java.lang.Object access$loadList(dev.brahmkshatriya.echo.common.helpers.PagedData$Single, kotlin.coroutines.Continuation)
   public final kotlin.jvm.functions.Function1 getLoad()
   public final java.util.List getItems()
   private final java.lang.Object loadList(kotlin.coroutines.Continuation)
   public java.lang.Object loadAllInternal(kotlin.coroutines.Continuation)
   public java.lang.Object loadListInternal(java.lang.String, kotlin.coroutines.Continuation)
-  public static final java.lang.Object access$loadList(dev.brahmkshatriya.echo.common.helpers.PagedData$Single, kotlin.coroutines.Continuation)
+  public void invalidate(java.lang.String)
 ========================================
 
 ========================================
@@ -1356,10 +1356,10 @@ Methods:
   public void clear()
   public dev.brahmkshatriya.echo.common.helpers.PagedData map(kotlin.jvm.functions.Function2)
   private final java.lang.Object data(kotlin.coroutines.Continuation)
-  public void invalidate(java.lang.String)
   public static final java.lang.Object access$data(dev.brahmkshatriya.echo.common.helpers.PagedData$Suspend, kotlin.coroutines.Continuation)
   public java.lang.Object loadAllInternal(kotlin.coroutines.Continuation)
   public java.lang.Object loadListInternal(java.lang.String, kotlin.coroutines.Continuation)
+  public void invalidate(java.lang.String)
 ========================================
 
 ========================================
@@ -1574,10 +1574,10 @@ Constructors:
 Fields:
 
 Methods:
+  public abstract java.lang.Object onStop(dev.brahmkshatriya.echo.common.models.NetworkRequest, java.lang.String, kotlin.coroutines.Continuation)
   public abstract java.lang.String getJavascriptToEvaluate()
   public java.lang.String getJavascriptToEvaluateOnPageStart()
   public static java.lang.String access$getJavascriptToEvaluateOnPageStart$jd(dev.brahmkshatriya.echo.common.helpers.WebViewRequest$Evaluate)
-  public abstract java.lang.Object onStop(dev.brahmkshatriya.echo.common.models.NetworkRequest, java.lang.String, kotlin.coroutines.Continuation)
   public static long access$getMaxTimeout$jd(dev.brahmkshatriya.echo.common.helpers.WebViewRequest$Evaluate)
   public static boolean access$getDontCache$jd(dev.brahmkshatriya.echo.common.helpers.WebViewRequest$Evaluate)
 ========================================
@@ -1609,8 +1609,8 @@ Constructors:
 Fields:
 
 Methods:
-  public abstract kotlin.text.Regex getInterceptUrlRegex()
   public abstract java.lang.Object onStop(java.util.List, kotlin.coroutines.Continuation)
+  public abstract kotlin.text.Regex getInterceptUrlRegex()
   public static long access$getMaxTimeout$jd(dev.brahmkshatriya.echo.common.helpers.WebViewRequest$Headers)
   public static boolean access$getDontCache$jd(dev.brahmkshatriya.echo.common.helpers.WebViewRequest$Headers)
 ========================================
@@ -1680,6 +1680,8 @@ Methods:
   public dev.brahmkshatriya.echo.common.models.Date getDate()
   public final dev.brahmkshatriya.echo.common.models.ImageHolder component10()
   public java.lang.String getDescription()
+  public static dev.brahmkshatriya.echo.common.models.Album copy$default(dev.brahmkshatriya.echo.common.models.Album, java.lang.String, java.lang.String, dev.brahmkshatriya.echo.common.models.Album$Type, dev.brahmkshatriya.echo.common.models.ImageHolder, java.util.List, java.lang.Long, java.lang.Long, dev.brahmkshatriya.echo.common.models.Date, java.lang.String, dev.brahmkshatriya.echo.common.models.ImageHolder, java.lang.String, boolean, java.lang.String, java.util.Map, boolean, boolean, boolean, boolean, boolean, boolean, int, java.lang.Object)
+  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Album, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
   public dev.brahmkshatriya.echo.common.models.ImageHolder getCover()
   public java.lang.String getSubtitle()
   public java.util.Map getExtras()
@@ -1688,10 +1690,18 @@ Methods:
   public final dev.brahmkshatriya.echo.common.models.Album$Type component3()
   public final dev.brahmkshatriya.echo.common.models.ImageHolder component4()
   public final java.util.List component5()
-  public static dev.brahmkshatriya.echo.common.models.Album copy$default(dev.brahmkshatriya.echo.common.models.Album, java.lang.String, java.lang.String, dev.brahmkshatriya.echo.common.models.Album$Type, dev.brahmkshatriya.echo.common.models.ImageHolder, java.util.List, java.lang.Long, java.lang.Long, dev.brahmkshatriya.echo.common.models.Date, java.lang.String, dev.brahmkshatriya.echo.common.models.ImageHolder, java.lang.String, boolean, java.lang.String, java.util.Map, boolean, boolean, boolean, boolean, boolean, boolean, int, java.lang.Object)
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_()
   public static final [Lkotlin.Lazy; access$get$childSerializers$cp()
-  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Album, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
+  public java.lang.String getTitle()
+  public java.util.List getArtists()
+  public boolean isExplicit()
+  public boolean isRadioSupported()
+  public boolean isFollowable()
+  public boolean isSaveable()
+  public boolean isLikeable()
+  public boolean isHideable()
+  public boolean isShareable()
+  public dev.brahmkshatriya.echo.common.models.ImageHolder getBackground()
   public java.lang.String getSubtitleWithOutE()
   public final java.lang.Long component6()
   public final java.lang.Long component7()
@@ -1701,21 +1711,11 @@ Methods:
   public final boolean component12()
   public final java.lang.String component13()
   public final java.util.Map component14()
-  public boolean isExplicit()
   public java.lang.String getSubtitleWithE()
   public boolean sameAs(dev.brahmkshatriya.echo.common.models.EchoMediaItem)
   public dev.brahmkshatriya.echo.common.models.Shelf$Item toShelf()
   public dev.brahmkshatriya.echo.common.models.EchoMediaItem copyMediaItem(java.lang.String, java.lang.String, dev.brahmkshatriya.echo.common.models.ImageHolder, java.lang.String, java.lang.String, java.util.Map, boolean, boolean, boolean)
-  public dev.brahmkshatriya.echo.common.models.ImageHolder getBackground()
-  public java.lang.String getTitle()
-  public boolean isRadioSupported()
-  public boolean isFollowable()
-  public boolean isSaveable()
-  public boolean isLikeable()
-  public boolean isHideable()
-  public boolean isShareable()
   private static final java.lang.CharSequence subtitleWithOutE$lambda$1$lambda$0(dev.brahmkshatriya.echo.common.models.Artist)
-  public java.util.List getArtists()
   public java.lang.Long getTrackCount()
   public final dev.brahmkshatriya.echo.common.models.Date getReleaseDate()
   public final boolean component15()
@@ -1747,12 +1747,12 @@ Fields:
 
 Methods:
   public final kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
+  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Album)
+  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+  public final dev.brahmkshatriya.echo.common.models.Album deserialize(kotlinx.serialization.encoding.Decoder)
   public final [Lkotlinx.serialization.KSerializer; childSerializers()
   public [Lkotlinx.serialization.KSerializer; typeParametersSerializers()
-  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Album)
-  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
-  public final dev.brahmkshatriya.echo.common.models.Album deserialize(kotlinx.serialization.encoding.Decoder)
-  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
 ========================================
 
 ========================================
@@ -1851,8 +1851,8 @@ Fields:
   private static final [Lkotlin.Lazy; $childSerializers
 
 Methods:
-  private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_$2()
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_$1()
+  private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_$2()
   public final java.lang.String getName()
   public boolean equals(java.lang.Object)
   public java.lang.String toString()
@@ -1862,6 +1862,8 @@ Methods:
   public boolean isPrivate()
   public final boolean component10()
   public java.lang.String getDescription()
+  public static dev.brahmkshatriya.echo.common.models.Artist copy$default(dev.brahmkshatriya.echo.common.models.Artist, java.lang.String, java.lang.String, dev.brahmkshatriya.echo.common.models.ImageHolder, java.lang.String, dev.brahmkshatriya.echo.common.models.ImageHolder, java.util.List, java.lang.String, java.util.Map, boolean, boolean, boolean, boolean, boolean, boolean, int, java.lang.Object)
+  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Artist, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
   public dev.brahmkshatriya.echo.common.models.ImageHolder getCover()
   public java.lang.String getSubtitle()
   public java.util.Map getExtras()
@@ -1870,11 +1872,19 @@ Methods:
   public final dev.brahmkshatriya.echo.common.models.ImageHolder component3()
   public final java.lang.String component4()
   public final dev.brahmkshatriya.echo.common.models.ImageHolder component5()
-  public static dev.brahmkshatriya.echo.common.models.Artist copy$default(dev.brahmkshatriya.echo.common.models.Artist, java.lang.String, java.lang.String, dev.brahmkshatriya.echo.common.models.ImageHolder, java.lang.String, dev.brahmkshatriya.echo.common.models.ImageHolder, java.util.List, java.lang.String, java.util.Map, boolean, boolean, boolean, boolean, boolean, boolean, int, java.lang.Object)
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_()
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_$0()
   public static final [Lkotlin.Lazy; access$get$childSerializers$cp()
-  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Artist, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
+  public java.lang.String getTitle()
+  public boolean isExplicit()
+  public boolean isRadioSupported()
+  public boolean isFollowable()
+  public boolean isSaveable()
+  public boolean isLikeable()
+  public boolean isHideable()
+  public boolean isShareable()
+  public final java.lang.String getBio()
+  public dev.brahmkshatriya.echo.common.models.ImageHolder getBackground()
   public final java.util.List getBanners()
   public java.lang.String getSubtitleWithOutE()
   public final java.util.List component6()
@@ -1885,20 +1895,10 @@ Methods:
   public final boolean component12()
   public final boolean component13()
   public final boolean component14()
-  public boolean isExplicit()
   public java.lang.String getSubtitleWithE()
   public boolean sameAs(dev.brahmkshatriya.echo.common.models.EchoMediaItem)
   public dev.brahmkshatriya.echo.common.models.Shelf$Item toShelf()
   public dev.brahmkshatriya.echo.common.models.EchoMediaItem copyMediaItem(java.lang.String, java.lang.String, dev.brahmkshatriya.echo.common.models.ImageHolder, java.lang.String, java.lang.String, java.util.Map, boolean, boolean, boolean)
-  public final java.lang.String getBio()
-  public dev.brahmkshatriya.echo.common.models.ImageHolder getBackground()
-  public java.lang.String getTitle()
-  public boolean isRadioSupported()
-  public boolean isFollowable()
-  public boolean isSaveable()
-  public boolean isLikeable()
-  public boolean isHideable()
-  public boolean isShareable()
 ========================================
 
 ========================================
@@ -1916,12 +1916,12 @@ Fields:
 
 Methods:
   public final kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
+  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Artist)
+  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+  public final dev.brahmkshatriya.echo.common.models.Artist deserialize(kotlinx.serialization.encoding.Decoder)
   public final [Lkotlinx.serialization.KSerializer; childSerializers()
   public [Lkotlinx.serialization.KSerializer; typeParametersSerializers()
-  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Artist)
-  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
-  public final dev.brahmkshatriya.echo.common.models.Artist deserialize(kotlinx.serialization.encoding.Decoder)
-  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
 ========================================
 
 ========================================
@@ -1985,17 +1985,17 @@ Methods:
   public java.lang.String toString()
   public int hashCode()
   public final dev.brahmkshatriya.echo.common.models.Chapter copy(java.lang.String, long, java.lang.Long, dev.brahmkshatriya.echo.common.models.Chapter$SkipType)
-  public final dev.brahmkshatriya.echo.common.models.Chapter$SkipType getSkipType()
-  public final long getStartTime()
   public final java.lang.Long getEndTime()
+  public final long getStartTime()
+  public static dev.brahmkshatriya.echo.common.models.Chapter copy$default(dev.brahmkshatriya.echo.common.models.Chapter, java.lang.String, long, java.lang.Long, dev.brahmkshatriya.echo.common.models.Chapter$SkipType, int, java.lang.Object)
+  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Chapter, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
   public final java.lang.String component1()
   public final long component2()
   public final java.lang.Long component3()
   public final dev.brahmkshatriya.echo.common.models.Chapter$SkipType component4()
-  public static dev.brahmkshatriya.echo.common.models.Chapter copy$default(dev.brahmkshatriya.echo.common.models.Chapter, java.lang.String, long, java.lang.Long, dev.brahmkshatriya.echo.common.models.Chapter$SkipType, int, java.lang.Object)
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_()
   public static final [Lkotlin.Lazy; access$get$childSerializers$cp()
-  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Chapter, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
+  public final dev.brahmkshatriya.echo.common.models.Chapter$SkipType getSkipType()
 ========================================
 
 ========================================
@@ -2013,12 +2013,12 @@ Fields:
 
 Methods:
   public final kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
+  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Chapter)
+  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+  public final dev.brahmkshatriya.echo.common.models.Chapter deserialize(kotlinx.serialization.encoding.Decoder)
   public final [Lkotlinx.serialization.KSerializer; childSerializers()
   public [Lkotlinx.serialization.KSerializer; typeParametersSerializers()
-  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Chapter)
-  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
-  public final dev.brahmkshatriya.echo.common.models.Chapter deserialize(kotlinx.serialization.encoding.Decoder)
-  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
 ========================================
 
 ========================================
@@ -2093,9 +2093,9 @@ Methods:
   public final java.lang.Integer getMonth()
   public final java.util.Date getDate()
   public final java.lang.Integer getDay()
-  public final long component1()
   public static dev.brahmkshatriya.echo.common.models.Date copy$default(dev.brahmkshatriya.echo.common.models.Date, long, int, java.lang.Object)
   public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Date, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
+  public final long component1()
   private static final java.util.Calendar _init_$lambda$8(dev.brahmkshatriya.echo.common.models.Date)
   private static final java.util.Calendar calendar_delegate$lambda$1(dev.brahmkshatriya.echo.common.models.Date)
   private static final java.util.Date date_delegate$lambda$2(dev.brahmkshatriya.echo.common.models.Date)
@@ -2124,12 +2124,12 @@ Fields:
 
 Methods:
   public final kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
+  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Date)
+  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+  public final dev.brahmkshatriya.echo.common.models.Date deserialize(kotlinx.serialization.encoding.Decoder)
   public final [Lkotlinx.serialization.KSerializer; childSerializers()
   public [Lkotlinx.serialization.KSerializer; typeParametersSerializers()
-  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Date)
-  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
-  public final dev.brahmkshatriya.echo.common.models.Date deserialize(kotlinx.serialization.encoding.Decoder)
-  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
 ========================================
 
 ========================================
@@ -2175,14 +2175,14 @@ Methods:
   public int hashCode()
   public final dev.brahmkshatriya.echo.common.models.EchoMediaItem getContext()
   public final dev.brahmkshatriya.echo.common.models.DownloadContext copy(java.lang.String, dev.brahmkshatriya.echo.common.models.Track, java.lang.Integer, dev.brahmkshatriya.echo.common.models.EchoMediaItem)
+  public static dev.brahmkshatriya.echo.common.models.DownloadContext copy$default(dev.brahmkshatriya.echo.common.models.DownloadContext, java.lang.String, dev.brahmkshatriya.echo.common.models.Track, java.lang.Integer, dev.brahmkshatriya.echo.common.models.EchoMediaItem, int, java.lang.Object)
+  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.DownloadContext, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
   public final java.lang.String component1()
   public final dev.brahmkshatriya.echo.common.models.Track component2()
   public final java.lang.Integer component3()
   public final dev.brahmkshatriya.echo.common.models.EchoMediaItem component4()
-  public static dev.brahmkshatriya.echo.common.models.DownloadContext copy$default(dev.brahmkshatriya.echo.common.models.DownloadContext, java.lang.String, dev.brahmkshatriya.echo.common.models.Track, java.lang.Integer, dev.brahmkshatriya.echo.common.models.EchoMediaItem, int, java.lang.Object)
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_()
   public static final [Lkotlin.Lazy; access$get$childSerializers$cp()
-  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.DownloadContext, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
   public final dev.brahmkshatriya.echo.common.models.Track getTrack()
   public final java.lang.Integer getSortOrder()
 ========================================
@@ -2202,12 +2202,12 @@ Fields:
 
 Methods:
   public final kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
+  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.DownloadContext)
+  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+  public final dev.brahmkshatriya.echo.common.models.DownloadContext deserialize(kotlinx.serialization.encoding.Decoder)
   public final [Lkotlinx.serialization.KSerializer; childSerializers()
   public [Lkotlinx.serialization.KSerializer; typeParametersSerializers()
-  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.DownloadContext)
-  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
-  public final dev.brahmkshatriya.echo.common.models.DownloadContext deserialize(kotlinx.serialization.encoding.Decoder)
-  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
 ========================================
 
 ========================================
@@ -2244,27 +2244,27 @@ Methods:
   public abstract dev.brahmkshatriya.echo.common.models.ImageHolder getCover()
   public abstract java.lang.String getSubtitle()
   public abstract java.util.Map getExtras()
-  public abstract java.lang.String getSubtitleWithOutE()
-  public boolean isExplicit()
-  public java.lang.String getSubtitleWithE()
-  public boolean sameAs(dev.brahmkshatriya.echo.common.models.EchoMediaItem)
-  public dev.brahmkshatriya.echo.common.models.Shelf$Item toShelf()
-  public dev.brahmkshatriya.echo.common.models.EchoMediaItem copyMediaItem(java.lang.String, java.lang.String, dev.brahmkshatriya.echo.common.models.ImageHolder, java.lang.String, java.lang.String, java.util.Map, boolean, boolean, boolean)
-  public static dev.brahmkshatriya.echo.common.models.EchoMediaItem copyMediaItem$default(dev.brahmkshatriya.echo.common.models.EchoMediaItem, java.lang.String, java.lang.String, dev.brahmkshatriya.echo.common.models.ImageHolder, java.lang.String, java.lang.String, java.util.Map, boolean, boolean, boolean, int, java.lang.Object)
-  public abstract dev.brahmkshatriya.echo.common.models.ImageHolder getBackground()
-  public static boolean access$isExplicit$jd(dev.brahmkshatriya.echo.common.models.EchoMediaItem)
-  public static boolean access$isPrivate$jd(dev.brahmkshatriya.echo.common.models.EchoMediaItem)
-  public static java.lang.String access$getSubtitleWithE$jd(dev.brahmkshatriya.echo.common.models.EchoMediaItem)
-  public static boolean access$sameAs$jd(dev.brahmkshatriya.echo.common.models.EchoMediaItem, dev.brahmkshatriya.echo.common.models.EchoMediaItem)
-  public static dev.brahmkshatriya.echo.common.models.Shelf$Item access$toShelf$jd(dev.brahmkshatriya.echo.common.models.EchoMediaItem)
-  public static dev.brahmkshatriya.echo.common.models.EchoMediaItem access$copyMediaItem$jd(dev.brahmkshatriya.echo.common.models.EchoMediaItem, java.lang.String, java.lang.String, dev.brahmkshatriya.echo.common.models.ImageHolder, java.lang.String, java.lang.String, java.util.Map, boolean, boolean, boolean)
   public abstract java.lang.String getTitle()
+  public boolean isExplicit()
   public abstract boolean isRadioSupported()
   public abstract boolean isFollowable()
   public abstract boolean isSaveable()
   public abstract boolean isLikeable()
   public abstract boolean isHideable()
   public abstract boolean isShareable()
+  public abstract dev.brahmkshatriya.echo.common.models.ImageHolder getBackground()
+  public abstract java.lang.String getSubtitleWithOutE()
+  public java.lang.String getSubtitleWithE()
+  public boolean sameAs(dev.brahmkshatriya.echo.common.models.EchoMediaItem)
+  public dev.brahmkshatriya.echo.common.models.Shelf$Item toShelf()
+  public dev.brahmkshatriya.echo.common.models.EchoMediaItem copyMediaItem(java.lang.String, java.lang.String, dev.brahmkshatriya.echo.common.models.ImageHolder, java.lang.String, java.lang.String, java.util.Map, boolean, boolean, boolean)
+  public static dev.brahmkshatriya.echo.common.models.EchoMediaItem copyMediaItem$default(dev.brahmkshatriya.echo.common.models.EchoMediaItem, java.lang.String, java.lang.String, dev.brahmkshatriya.echo.common.models.ImageHolder, java.lang.String, java.lang.String, java.util.Map, boolean, boolean, boolean, int, java.lang.Object)
+  public static boolean access$isExplicit$jd(dev.brahmkshatriya.echo.common.models.EchoMediaItem)
+  public static boolean access$isPrivate$jd(dev.brahmkshatriya.echo.common.models.EchoMediaItem)
+  public static java.lang.String access$getSubtitleWithE$jd(dev.brahmkshatriya.echo.common.models.EchoMediaItem)
+  public static boolean access$sameAs$jd(dev.brahmkshatriya.echo.common.models.EchoMediaItem, dev.brahmkshatriya.echo.common.models.EchoMediaItem)
+  public static dev.brahmkshatriya.echo.common.models.Shelf$Item access$toShelf$jd(dev.brahmkshatriya.echo.common.models.EchoMediaItem)
+  public static dev.brahmkshatriya.echo.common.models.EchoMediaItem access$copyMediaItem$jd(dev.brahmkshatriya.echo.common.models.EchoMediaItem, java.lang.String, java.lang.String, dev.brahmkshatriya.echo.common.models.ImageHolder, java.lang.String, java.lang.String, java.util.Map, boolean, boolean, boolean)
 ========================================
 
 ========================================
@@ -2319,6 +2319,8 @@ Methods:
   public dev.brahmkshatriya.echo.common.models.Album$Type getType()
   public java.lang.Long getDuration()
   public dev.brahmkshatriya.echo.common.models.Date getDate()
+  public abstract java.util.List getArtists()
+  private static java.lang.CharSequence _get_subtitleWithOutE_$lambda$1$lambda$0(dev.brahmkshatriya.echo.common.models.Artist)
   public java.lang.String getSubtitleWithOutE()
   public static boolean access$isExplicit$jd(dev.brahmkshatriya.echo.common.models.EchoMediaItem$Lists)
   public static boolean access$isPrivate$jd(dev.brahmkshatriya.echo.common.models.EchoMediaItem$Lists)
@@ -2326,9 +2328,7 @@ Methods:
   public static boolean access$sameAs$jd(dev.brahmkshatriya.echo.common.models.EchoMediaItem$Lists, dev.brahmkshatriya.echo.common.models.EchoMediaItem)
   public static dev.brahmkshatriya.echo.common.models.Shelf$Item access$toShelf$jd(dev.brahmkshatriya.echo.common.models.EchoMediaItem$Lists)
   public static dev.brahmkshatriya.echo.common.models.EchoMediaItem access$copyMediaItem$jd(dev.brahmkshatriya.echo.common.models.EchoMediaItem$Lists, java.lang.String, java.lang.String, dev.brahmkshatriya.echo.common.models.ImageHolder, java.lang.String, java.lang.String, java.util.Map, boolean, boolean, boolean)
-  public abstract java.util.List getArtists()
   public abstract java.lang.Long getTrackCount()
-  private static java.lang.CharSequence _get_subtitleWithOutE_$lambda$1$lambda$0(dev.brahmkshatriya.echo.common.models.Artist)
   public static java.lang.Long access$getDuration$jd(dev.brahmkshatriya.echo.common.models.EchoMediaItem$Lists)
   public static dev.brahmkshatriya.echo.common.models.Date access$getDate$jd(dev.brahmkshatriya.echo.common.models.EchoMediaItem$Lists)
   public static java.lang.String access$getLabel$jd(dev.brahmkshatriya.echo.common.models.EchoMediaItem$Lists)
@@ -2388,8 +2388,8 @@ Methods:
   public static boolean isPrivate(dev.brahmkshatriya.echo.common.models.EchoMediaItem$Lists)
   public static java.lang.Long getDuration(dev.brahmkshatriya.echo.common.models.EchoMediaItem$Lists)
   public static dev.brahmkshatriya.echo.common.models.Date getDate(dev.brahmkshatriya.echo.common.models.EchoMediaItem$Lists)
-  public static java.lang.String getSubtitleWithOutE(dev.brahmkshatriya.echo.common.models.EchoMediaItem$Lists)
   public static boolean isExplicit(dev.brahmkshatriya.echo.common.models.EchoMediaItem$Lists)
+  public static java.lang.String getSubtitleWithOutE(dev.brahmkshatriya.echo.common.models.EchoMediaItem$Lists)
   public static java.lang.String getSubtitleWithE(dev.brahmkshatriya.echo.common.models.EchoMediaItem$Lists)
   public static boolean sameAs(dev.brahmkshatriya.echo.common.models.EchoMediaItem$Lists, dev.brahmkshatriya.echo.common.models.EchoMediaItem)
   public static dev.brahmkshatriya.echo.common.models.Shelf$Item toShelf(dev.brahmkshatriya.echo.common.models.EchoMediaItem$Lists)
@@ -2442,9 +2442,9 @@ Methods:
   public java.lang.String toString()
   public int hashCode()
   public final dev.brahmkshatriya.echo.common.models.Feed copy(java.util.List, kotlin.jvm.functions.Function2)
+  public static dev.brahmkshatriya.echo.common.models.Feed copy$default(dev.brahmkshatriya.echo.common.models.Feed, java.util.List, kotlin.jvm.functions.Function2, int, java.lang.Object)
   public final java.util.List component1()
   public final kotlin.jvm.functions.Function2 component2()
-  public static dev.brahmkshatriya.echo.common.models.Feed copy$default(dev.brahmkshatriya.echo.common.models.Feed, java.util.List, kotlin.jvm.functions.Function2, int, java.lang.Object)
   public final java.util.List getTabs()
   public final kotlin.jvm.functions.Function2 getGetPagedData()
   public final java.util.List getNotSortTabs()
@@ -2476,18 +2476,18 @@ Methods:
   public java.lang.String toString()
   public int hashCode()
   public final dev.brahmkshatriya.echo.common.models.Feed$Buttons copy(boolean, boolean, boolean, java.util.List)
-  public final boolean getShowSearch()
-  public final boolean getShowSort()
-  public final boolean getShowPlayAndShuffle()
-  public final java.util.List getCustomTrackList()
+  public static dev.brahmkshatriya.echo.common.models.Feed$Buttons copy$default(dev.brahmkshatriya.echo.common.models.Feed$Buttons, boolean, boolean, boolean, java.util.List, int, java.lang.Object)
+  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Feed$Buttons, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
   public final boolean component1()
   public final boolean component2()
   public final boolean component3()
   public final java.util.List component4()
-  public static dev.brahmkshatriya.echo.common.models.Feed$Buttons copy$default(dev.brahmkshatriya.echo.common.models.Feed$Buttons, boolean, boolean, boolean, java.util.List, int, java.lang.Object)
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_()
   public static final [Lkotlin.Lazy; access$get$childSerializers$cp()
-  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Feed$Buttons, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
+  public final boolean getShowSearch()
+  public final boolean getShowSort()
+  public final boolean getShowPlayAndShuffle()
+  public final java.util.List getCustomTrackList()
   public static final dev.brahmkshatriya.echo.common.models.Feed$Buttons access$getEMPTY$cp()
 ========================================
 
@@ -2506,12 +2506,12 @@ Fields:
 
 Methods:
   public final kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
+  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Feed$Buttons)
+  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+  public final dev.brahmkshatriya.echo.common.models.Feed$Buttons deserialize(kotlinx.serialization.encoding.Decoder)
   public final [Lkotlinx.serialization.KSerializer; childSerializers()
   public [Lkotlinx.serialization.KSerializer; typeParametersSerializers()
-  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Feed$Buttons)
-  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
-  public final dev.brahmkshatriya.echo.common.models.Feed$Buttons deserialize(kotlinx.serialization.encoding.Decoder)
-  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
 ========================================
 
 ========================================
@@ -2546,14 +2546,14 @@ Fields:
 Methods:
   public final dev.brahmkshatriya.echo.common.models.Feed$Data toFeedData(dev.brahmkshatriya.echo.common.helpers.PagedData, dev.brahmkshatriya.echo.common.models.Feed$Buttons, dev.brahmkshatriya.echo.common.models.ImageHolder)
   public final dev.brahmkshatriya.echo.common.models.Feed$Data toFeedData(java.util.List, dev.brahmkshatriya.echo.common.models.Feed$Buttons, dev.brahmkshatriya.echo.common.models.ImageHolder)
-  public final java.lang.Object loadAll(dev.brahmkshatriya.echo.common.models.Feed, kotlin.coroutines.Continuation)
+  public final java.lang.Object pagedDataOfFirst(dev.brahmkshatriya.echo.common.models.Feed, kotlin.coroutines.Continuation)
   public static dev.brahmkshatriya.echo.common.models.Feed toFeed$default(dev.brahmkshatriya.echo.common.models.Feed$Companion, java.util.List, dev.brahmkshatriya.echo.common.models.Feed$Buttons, dev.brahmkshatriya.echo.common.models.ImageHolder, int, java.lang.Object)
   public static dev.brahmkshatriya.echo.common.models.Feed toFeed$default(dev.brahmkshatriya.echo.common.models.Feed$Companion, dev.brahmkshatriya.echo.common.helpers.PagedData, dev.brahmkshatriya.echo.common.models.Feed$Buttons, dev.brahmkshatriya.echo.common.models.ImageHolder, int, java.lang.Object)
-  public final java.lang.Object pagedDataOfFirst(dev.brahmkshatriya.echo.common.models.Feed, kotlin.coroutines.Continuation)
   public static dev.brahmkshatriya.echo.common.models.Feed$Data toFeedData$default(dev.brahmkshatriya.echo.common.models.Feed$Companion, java.util.List, dev.brahmkshatriya.echo.common.models.Feed$Buttons, dev.brahmkshatriya.echo.common.models.ImageHolder, int, java.lang.Object)
   public static dev.brahmkshatriya.echo.common.models.Feed$Data toFeedData$default(dev.brahmkshatriya.echo.common.models.Feed$Companion, dev.brahmkshatriya.echo.common.helpers.PagedData, dev.brahmkshatriya.echo.common.models.Feed$Buttons, dev.brahmkshatriya.echo.common.models.ImageHolder, int, java.lang.Object)
   public final dev.brahmkshatriya.echo.common.models.Feed toFeed(dev.brahmkshatriya.echo.common.helpers.PagedData, dev.brahmkshatriya.echo.common.models.Feed$Buttons, dev.brahmkshatriya.echo.common.models.ImageHolder)
   public final dev.brahmkshatriya.echo.common.models.Feed toFeed(java.util.List, dev.brahmkshatriya.echo.common.models.Feed$Buttons, dev.brahmkshatriya.echo.common.models.ImageHolder)
+  public final java.lang.Object loadAll(dev.brahmkshatriya.echo.common.models.Feed, kotlin.coroutines.Continuation)
 ========================================
 
 ========================================
@@ -2711,12 +2711,12 @@ Methods:
   public java.lang.String toString()
   public int hashCode()
   public final dev.brahmkshatriya.echo.common.models.Feed$Data copy(dev.brahmkshatriya.echo.common.helpers.PagedData, dev.brahmkshatriya.echo.common.models.Feed$Buttons, dev.brahmkshatriya.echo.common.models.ImageHolder)
+  public static dev.brahmkshatriya.echo.common.models.Feed$Data copy$default(dev.brahmkshatriya.echo.common.models.Feed$Data, dev.brahmkshatriya.echo.common.helpers.PagedData, dev.brahmkshatriya.echo.common.models.Feed$Buttons, dev.brahmkshatriya.echo.common.models.ImageHolder, int, java.lang.Object)
   public final dev.brahmkshatriya.echo.common.helpers.PagedData component1()
   public final dev.brahmkshatriya.echo.common.models.Feed$Buttons component2()
   public final dev.brahmkshatriya.echo.common.models.ImageHolder component3()
-  public static dev.brahmkshatriya.echo.common.models.Feed$Data copy$default(dev.brahmkshatriya.echo.common.models.Feed$Data, dev.brahmkshatriya.echo.common.helpers.PagedData, dev.brahmkshatriya.echo.common.models.Feed$Buttons, dev.brahmkshatriya.echo.common.models.ImageHolder, int, java.lang.Object)
-  public final dev.brahmkshatriya.echo.common.models.ImageHolder getBackground()
   public final dev.brahmkshatriya.echo.common.helpers.PagedData getPagedData()
+  public final dev.brahmkshatriya.echo.common.models.ImageHolder getBackground()
   public final dev.brahmkshatriya.echo.common.models.Feed$Buttons getButtons()
 ========================================
 
@@ -2788,10 +2788,10 @@ Methods:
   public java.lang.String toString()
   public int hashCode()
   public final dev.brahmkshatriya.echo.common.models.ImageHolder$HexColorImageHolder copy(java.lang.String)
-  public final java.lang.String getHex()
-  public final java.lang.String component1()
   public static dev.brahmkshatriya.echo.common.models.ImageHolder$HexColorImageHolder copy$default(dev.brahmkshatriya.echo.common.models.ImageHolder$HexColorImageHolder, java.lang.String, int, java.lang.Object)
   public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.ImageHolder$HexColorImageHolder, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
+  public final java.lang.String component1()
+  public final java.lang.String getHex()
   public boolean getCrop()
 ========================================
 
@@ -2810,12 +2810,12 @@ Fields:
 
 Methods:
   public final kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
+  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.ImageHolder$HexColorImageHolder)
+  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+  public final dev.brahmkshatriya.echo.common.models.ImageHolder$HexColorImageHolder deserialize(kotlinx.serialization.encoding.Decoder)
   public final [Lkotlinx.serialization.KSerializer; childSerializers()
   public [Lkotlinx.serialization.KSerializer; typeParametersSerializers()
-  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.ImageHolder$HexColorImageHolder)
-  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
-  public final dev.brahmkshatriya.echo.common.models.ImageHolder$HexColorImageHolder deserialize(kotlinx.serialization.encoding.Decoder)
-  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
 ========================================
 
 ========================================
@@ -2854,10 +2854,10 @@ Methods:
   public java.lang.String toString()
   public int hashCode()
   public final dev.brahmkshatriya.echo.common.models.ImageHolder$NetworkRequestImageHolder copy(dev.brahmkshatriya.echo.common.models.NetworkRequest, boolean)
-  public final dev.brahmkshatriya.echo.common.models.NetworkRequest component1()
-  public final boolean component2()
   public static dev.brahmkshatriya.echo.common.models.ImageHolder$NetworkRequestImageHolder copy$default(dev.brahmkshatriya.echo.common.models.ImageHolder$NetworkRequestImageHolder, dev.brahmkshatriya.echo.common.models.NetworkRequest, boolean, int, java.lang.Object)
   public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.ImageHolder$NetworkRequestImageHolder, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
+  public final dev.brahmkshatriya.echo.common.models.NetworkRequest component1()
+  public final boolean component2()
   public final dev.brahmkshatriya.echo.common.models.NetworkRequest getRequest()
   public boolean getCrop()
 ========================================
@@ -2877,12 +2877,12 @@ Fields:
 
 Methods:
   public final kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
+  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.ImageHolder$NetworkRequestImageHolder)
+  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+  public final dev.brahmkshatriya.echo.common.models.ImageHolder$NetworkRequestImageHolder deserialize(kotlinx.serialization.encoding.Decoder)
   public final [Lkotlinx.serialization.KSerializer; childSerializers()
   public [Lkotlinx.serialization.KSerializer; typeParametersSerializers()
-  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.ImageHolder$NetworkRequestImageHolder)
-  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
-  public final dev.brahmkshatriya.echo.common.models.ImageHolder$NetworkRequestImageHolder deserialize(kotlinx.serialization.encoding.Decoder)
-  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
 ========================================
 
 ========================================
@@ -2921,11 +2921,11 @@ Methods:
   public java.lang.String toString()
   public int hashCode()
   public final dev.brahmkshatriya.echo.common.models.ImageHolder$ResourceIdImageHolder copy(int, boolean)
-  public final int getResId()
-  public final int component1()
-  public final boolean component2()
   public static dev.brahmkshatriya.echo.common.models.ImageHolder$ResourceIdImageHolder copy$default(dev.brahmkshatriya.echo.common.models.ImageHolder$ResourceIdImageHolder, int, boolean, int, java.lang.Object)
   public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.ImageHolder$ResourceIdImageHolder, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
+  public final int component1()
+  public final boolean component2()
+  public final int getResId()
   public boolean getCrop()
 ========================================
 
@@ -2944,12 +2944,12 @@ Fields:
 
 Methods:
   public final kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
+  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.ImageHolder$ResourceIdImageHolder)
+  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+  public final dev.brahmkshatriya.echo.common.models.ImageHolder$ResourceIdImageHolder deserialize(kotlinx.serialization.encoding.Decoder)
   public final [Lkotlinx.serialization.KSerializer; childSerializers()
   public [Lkotlinx.serialization.KSerializer; typeParametersSerializers()
-  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.ImageHolder$ResourceIdImageHolder)
-  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
-  public final dev.brahmkshatriya.echo.common.models.ImageHolder$ResourceIdImageHolder deserialize(kotlinx.serialization.encoding.Decoder)
-  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
 ========================================
 
 ========================================
@@ -2988,11 +2988,11 @@ Methods:
   public java.lang.String toString()
   public int hashCode()
   public final dev.brahmkshatriya.echo.common.models.ImageHolder$ResourceUriImageHolder copy(java.lang.String, boolean)
-  public final java.lang.String getUri()
-  public final java.lang.String component1()
-  public final boolean component2()
   public static dev.brahmkshatriya.echo.common.models.ImageHolder$ResourceUriImageHolder copy$default(dev.brahmkshatriya.echo.common.models.ImageHolder$ResourceUriImageHolder, java.lang.String, boolean, int, java.lang.Object)
   public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.ImageHolder$ResourceUriImageHolder, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
+  public final java.lang.String component1()
+  public final boolean component2()
+  public final java.lang.String getUri()
   public boolean getCrop()
 ========================================
 
@@ -3011,12 +3011,12 @@ Fields:
 
 Methods:
   public final kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
+  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.ImageHolder$ResourceUriImageHolder)
+  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+  public final dev.brahmkshatriya.echo.common.models.ImageHolder$ResourceUriImageHolder deserialize(kotlinx.serialization.encoding.Decoder)
   public final [Lkotlinx.serialization.KSerializer; childSerializers()
   public [Lkotlinx.serialization.KSerializer; typeParametersSerializers()
-  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.ImageHolder$ResourceUriImageHolder)
-  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
-  public final dev.brahmkshatriya.echo.common.models.ImageHolder$ResourceUriImageHolder deserialize(kotlinx.serialization.encoding.Decoder)
-  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
 ========================================
 
 ========================================
@@ -3084,6 +3084,9 @@ Methods:
   public int hashCode()
   public final java.lang.String getId()
   public final dev.brahmkshatriya.echo.common.models.Lyrics copy(java.lang.String, java.lang.String, java.lang.String, dev.brahmkshatriya.echo.common.models.Lyrics$Lyric, java.util.Map)
+  public final dev.brahmkshatriya.echo.common.models.Lyrics$Lyric getLyrics()
+  public static dev.brahmkshatriya.echo.common.models.Lyrics copy$default(dev.brahmkshatriya.echo.common.models.Lyrics, java.lang.String, java.lang.String, java.lang.String, dev.brahmkshatriya.echo.common.models.Lyrics$Lyric, java.util.Map, int, java.lang.Object)
+  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Lyrics, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
   public final java.lang.String getSubtitle()
   public final java.util.Map getExtras()
   public final java.lang.String component1()
@@ -3091,13 +3094,10 @@ Methods:
   public final java.lang.String component3()
   public final dev.brahmkshatriya.echo.common.models.Lyrics$Lyric component4()
   public final java.util.Map component5()
-  public static dev.brahmkshatriya.echo.common.models.Lyrics copy$default(dev.brahmkshatriya.echo.common.models.Lyrics, java.lang.String, java.lang.String, java.lang.String, dev.brahmkshatriya.echo.common.models.Lyrics$Lyric, java.util.Map, int, java.lang.Object)
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_()
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_$0()
   public static final [Lkotlin.Lazy; access$get$childSerializers$cp()
-  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Lyrics, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
   public final java.lang.String getTitle()
-  public final dev.brahmkshatriya.echo.common.models.Lyrics$Lyric getLyrics()
 ========================================
 
 ========================================
@@ -3115,12 +3115,12 @@ Fields:
 
 Methods:
   public final kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
+  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Lyrics)
+  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+  public final dev.brahmkshatriya.echo.common.models.Lyrics deserialize(kotlinx.serialization.encoding.Decoder)
   public final [Lkotlinx.serialization.KSerializer; childSerializers()
   public [Lkotlinx.serialization.KSerializer; typeParametersSerializers()
-  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Lyrics)
-  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
-  public final dev.brahmkshatriya.echo.common.models.Lyrics deserialize(kotlinx.serialization.encoding.Decoder)
-  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
 ========================================
 
 ========================================
@@ -3161,13 +3161,13 @@ Methods:
   public int hashCode()
   public final dev.brahmkshatriya.echo.common.models.Lyrics$Item copy(java.lang.String, long, long)
   public final java.lang.String getText()
-  public final long getStartTime()
   public final long getEndTime()
+  public final long getStartTime()
+  public static dev.brahmkshatriya.echo.common.models.Lyrics$Item copy$default(dev.brahmkshatriya.echo.common.models.Lyrics$Item, java.lang.String, long, long, int, java.lang.Object)
+  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Lyrics$Item, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
   public final java.lang.String component1()
   public final long component2()
   public final long component3()
-  public static dev.brahmkshatriya.echo.common.models.Lyrics$Item copy$default(dev.brahmkshatriya.echo.common.models.Lyrics$Item, java.lang.String, long, long, int, java.lang.Object)
-  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Lyrics$Item, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
 ========================================
 
 ========================================
@@ -3185,12 +3185,12 @@ Fields:
 
 Methods:
   public final kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
+  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Lyrics$Item)
+  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+  public final dev.brahmkshatriya.echo.common.models.Lyrics$Item deserialize(kotlinx.serialization.encoding.Decoder)
   public final [Lkotlinx.serialization.KSerializer; childSerializers()
   public [Lkotlinx.serialization.KSerializer; typeParametersSerializers()
-  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Lyrics$Item)
-  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
-  public final dev.brahmkshatriya.echo.common.models.Lyrics$Item deserialize(kotlinx.serialization.encoding.Decoder)
-  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
 ========================================
 
 ========================================
@@ -3267,9 +3267,9 @@ Methods:
   public int hashCode()
   public final dev.brahmkshatriya.echo.common.models.Lyrics$Simple copy(java.lang.String)
   public final java.lang.String getText()
-  public final java.lang.String component1()
   public static dev.brahmkshatriya.echo.common.models.Lyrics$Simple copy$default(dev.brahmkshatriya.echo.common.models.Lyrics$Simple, java.lang.String, int, java.lang.Object)
   public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Lyrics$Simple, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
+  public final java.lang.String component1()
 ========================================
 
 ========================================
@@ -3287,12 +3287,12 @@ Fields:
 
 Methods:
   public final kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
+  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Lyrics$Simple)
+  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+  public final dev.brahmkshatriya.echo.common.models.Lyrics$Simple deserialize(kotlinx.serialization.encoding.Decoder)
   public final [Lkotlinx.serialization.KSerializer; childSerializers()
   public [Lkotlinx.serialization.KSerializer; typeParametersSerializers()
-  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Lyrics$Simple)
-  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
-  public final dev.brahmkshatriya.echo.common.models.Lyrics$Simple deserialize(kotlinx.serialization.encoding.Decoder)
-  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
 ========================================
 
 ========================================
@@ -3334,13 +3334,13 @@ Methods:
   public int hashCode()
   public final dev.brahmkshatriya.echo.common.models.Lyrics$Timed copy(java.util.List, boolean)
   public final boolean getFillTimeGaps()
+  public final java.util.List getList()
+  public static dev.brahmkshatriya.echo.common.models.Lyrics$Timed copy$default(dev.brahmkshatriya.echo.common.models.Lyrics$Timed, java.util.List, boolean, int, java.lang.Object)
+  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Lyrics$Timed, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
   public final java.util.List component1()
   public final boolean component2()
-  public static dev.brahmkshatriya.echo.common.models.Lyrics$Timed copy$default(dev.brahmkshatriya.echo.common.models.Lyrics$Timed, java.util.List, boolean, int, java.lang.Object)
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_()
   public static final [Lkotlin.Lazy; access$get$childSerializers$cp()
-  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Lyrics$Timed, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
-  public final java.util.List getList()
 ========================================
 
 ========================================
@@ -3358,12 +3358,12 @@ Fields:
 
 Methods:
   public final kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
+  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Lyrics$Timed)
+  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+  public final dev.brahmkshatriya.echo.common.models.Lyrics$Timed deserialize(kotlinx.serialization.encoding.Decoder)
   public final [Lkotlinx.serialization.KSerializer; childSerializers()
   public [Lkotlinx.serialization.KSerializer; typeParametersSerializers()
-  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Lyrics$Timed)
-  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
-  public final dev.brahmkshatriya.echo.common.models.Lyrics$Timed deserialize(kotlinx.serialization.encoding.Decoder)
-  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
 ========================================
 
 ========================================
@@ -3405,13 +3405,13 @@ Methods:
   public int hashCode()
   public final dev.brahmkshatriya.echo.common.models.Lyrics$WordByWord copy(java.util.List, boolean)
   public final boolean getFillTimeGaps()
+  public final java.util.List getList()
+  public static dev.brahmkshatriya.echo.common.models.Lyrics$WordByWord copy$default(dev.brahmkshatriya.echo.common.models.Lyrics$WordByWord, java.util.List, boolean, int, java.lang.Object)
+  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Lyrics$WordByWord, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
   public final java.util.List component1()
   public final boolean component2()
-  public static dev.brahmkshatriya.echo.common.models.Lyrics$WordByWord copy$default(dev.brahmkshatriya.echo.common.models.Lyrics$WordByWord, java.util.List, boolean, int, java.lang.Object)
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_()
   public static final [Lkotlin.Lazy; access$get$childSerializers$cp()
-  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Lyrics$WordByWord, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
-  public final java.util.List getList()
 ========================================
 
 ========================================
@@ -3429,12 +3429,12 @@ Fields:
 
 Methods:
   public final kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
+  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Lyrics$WordByWord)
+  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+  public final dev.brahmkshatriya.echo.common.models.Lyrics$WordByWord deserialize(kotlinx.serialization.encoding.Decoder)
   public final [Lkotlinx.serialization.KSerializer; childSerializers()
   public [Lkotlinx.serialization.KSerializer; typeParametersSerializers()
-  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Lyrics$WordByWord)
-  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
-  public final dev.brahmkshatriya.echo.common.models.Lyrics$WordByWord deserialize(kotlinx.serialization.encoding.Decoder)
-  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
 ========================================
 
 ========================================
@@ -3473,10 +3473,10 @@ Methods:
   public int hashCode()
   public final java.lang.String getMessage()
   public final dev.brahmkshatriya.echo.common.models.Message copy(java.lang.String, dev.brahmkshatriya.echo.common.models.Message$Action)
-  public final dev.brahmkshatriya.echo.common.models.Message$Action getAction()
+  public static dev.brahmkshatriya.echo.common.models.Message copy$default(dev.brahmkshatriya.echo.common.models.Message, java.lang.String, dev.brahmkshatriya.echo.common.models.Message$Action, int, java.lang.Object)
   public final java.lang.String component1()
   public final dev.brahmkshatriya.echo.common.models.Message$Action component2()
-  public static dev.brahmkshatriya.echo.common.models.Message copy$default(dev.brahmkshatriya.echo.common.models.Message, java.lang.String, dev.brahmkshatriya.echo.common.models.Message$Action, int, java.lang.Object)
+  public final dev.brahmkshatriya.echo.common.models.Message$Action getAction()
 ========================================
 
 ========================================
@@ -3499,9 +3499,9 @@ Methods:
   public int hashCode()
   public final dev.brahmkshatriya.echo.common.models.Message$Action copy(java.lang.String, kotlin.jvm.functions.Function0)
   public final kotlin.jvm.functions.Function0 getHandler()
+  public static dev.brahmkshatriya.echo.common.models.Message$Action copy$default(dev.brahmkshatriya.echo.common.models.Message$Action, java.lang.String, kotlin.jvm.functions.Function0, int, java.lang.Object)
   public final java.lang.String component1()
   public final kotlin.jvm.functions.Function0 component2()
-  public static dev.brahmkshatriya.echo.common.models.Message$Action copy$default(dev.brahmkshatriya.echo.common.models.Message$Action, java.lang.String, kotlin.jvm.functions.Function0, int, java.lang.Object)
 ========================================
 
 ========================================
@@ -3535,8 +3535,8 @@ Fields:
   private static final [Lkotlin.Lazy; $childSerializers
 
 Methods:
-  private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_$2()
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_$1()
+  private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_$2()
   public final java.lang.String getName()
   public boolean equals(java.lang.Object)
   public java.lang.String toString()
@@ -3550,6 +3550,16 @@ Methods:
   public final boolean isEnabled()
   public final java.lang.String component10()
   public final java.lang.String getDescription()
+  public static dev.brahmkshatriya.echo.common.models.Metadata copy$default(dev.brahmkshatriya.echo.common.models.Metadata, java.lang.String, java.lang.String, dev.brahmkshatriya.echo.common.models.ImportType, dev.brahmkshatriya.echo.common.models.ExtensionType, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, dev.brahmkshatriya.echo.common.models.ImageHolder, java.lang.String, java.lang.String, java.util.List, boolean, int, java.lang.Object)
+  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Metadata, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
+  public final java.lang.String component1()
+  public final java.lang.String component2()
+  public final dev.brahmkshatriya.echo.common.models.ImportType component3()
+  public final dev.brahmkshatriya.echo.common.models.ExtensionType component4()
+  public final java.lang.String component5()
+  private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_()
+  private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_$0()
+  public static final [Lkotlin.Lazy; access$get$childSerializers$cp()
   public final dev.brahmkshatriya.echo.common.models.ImportType getImportType()
   public final java.lang.String getAuthor()
   public final java.lang.String getAuthorUrl()
@@ -3557,16 +3567,6 @@ Methods:
   public final java.lang.String getRepoUrl()
   public final java.lang.String getUpdateUrl()
   public final java.util.List getPreservedPackages()
-  public final java.lang.String component1()
-  public final java.lang.String component2()
-  public final dev.brahmkshatriya.echo.common.models.ImportType component3()
-  public final dev.brahmkshatriya.echo.common.models.ExtensionType component4()
-  public final java.lang.String component5()
-  public static dev.brahmkshatriya.echo.common.models.Metadata copy$default(dev.brahmkshatriya.echo.common.models.Metadata, java.lang.String, java.lang.String, dev.brahmkshatriya.echo.common.models.ImportType, dev.brahmkshatriya.echo.common.models.ExtensionType, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, dev.brahmkshatriya.echo.common.models.ImageHolder, java.lang.String, java.lang.String, java.util.List, boolean, int, java.lang.Object)
-  private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_()
-  private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_$0()
-  public static final [Lkotlin.Lazy; access$get$childSerializers$cp()
-  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Metadata, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
   public final java.lang.String component6()
   public final java.lang.String component7()
   public final java.lang.String component8()
@@ -3593,12 +3593,12 @@ Fields:
 
 Methods:
   public final kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
+  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Metadata)
+  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+  public final dev.brahmkshatriya.echo.common.models.Metadata deserialize(kotlinx.serialization.encoding.Decoder)
   public final [Lkotlinx.serialization.KSerializer; childSerializers()
   public [Lkotlinx.serialization.KSerializer; typeParametersSerializers()
-  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Metadata)
-  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
-  public final dev.brahmkshatriya.echo.common.models.Metadata deserialize(kotlinx.serialization.encoding.Decoder)
-  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
 ========================================
 
 ========================================
@@ -3669,24 +3669,24 @@ Methods:
   public int hashCode()
   public final dev.brahmkshatriya.echo.common.models.NetworkRequest$Method getMethod()
   public final dev.brahmkshatriya.echo.common.models.NetworkRequest copy(java.lang.String, java.util.Map, dev.brahmkshatriya.echo.common.models.NetworkRequest$Method, java.lang.String)
-  public final java.util.Map getHeaders()
+  public static dev.brahmkshatriya.echo.common.models.NetworkRequest copy$default(dev.brahmkshatriya.echo.common.models.NetworkRequest, java.lang.String, java.util.Map, dev.brahmkshatriya.echo.common.models.NetworkRequest$Method, java.lang.String, int, java.lang.Object)
+  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.NetworkRequest, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
   public final java.lang.String component1()
   public final java.util.Map component2()
   public final dev.brahmkshatriya.echo.common.models.NetworkRequest$Method component3()
   public final java.lang.String component4()
-  public static dev.brahmkshatriya.echo.common.models.NetworkRequest copy$default(dev.brahmkshatriya.echo.common.models.NetworkRequest, java.lang.String, java.util.Map, dev.brahmkshatriya.echo.common.models.NetworkRequest$Method, java.lang.String, int, java.lang.Object)
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_()
   public static final [Lkotlin.Lazy; access$get$childSerializers$cp()
-  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.NetworkRequest, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
+  public final java.lang.String getUrl()
   private static final [B body_delegate$lambda$1(dev.brahmkshatriya.echo.common.models.NetworkRequest)
   private static final java.util.Map lowerCaseHeaders_delegate$lambda$3(dev.brahmkshatriya.echo.common.models.NetworkRequest)
-  public final java.lang.String getUrl()
   public final java.lang.String getBodyBase64()
   public final [B getBody()
   public final java.util.Map getLowerCaseHeaders()
   private static final [B _init_$lambda$6(dev.brahmkshatriya.echo.common.models.NetworkRequest)
   private static final java.util.Map _init_$lambda$8(dev.brahmkshatriya.echo.common.models.NetworkRequest)
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_$9()
+  public final java.util.Map getHeaders()
 ========================================
 
 ========================================
@@ -3704,12 +3704,12 @@ Fields:
 
 Methods:
   public final kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
+  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.NetworkRequest)
+  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+  public final dev.brahmkshatriya.echo.common.models.NetworkRequest deserialize(kotlinx.serialization.encoding.Decoder)
   public final [Lkotlinx.serialization.KSerializer; childSerializers()
   public [Lkotlinx.serialization.KSerializer; typeParametersSerializers()
-  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.NetworkRequest)
-  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
-  public final dev.brahmkshatriya.echo.common.models.NetworkRequest deserialize(kotlinx.serialization.encoding.Decoder)
-  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
 ========================================
 
 ========================================
@@ -3796,9 +3796,9 @@ Fields:
   private static final [Lkotlin.Lazy; $childSerializers
 
 Methods:
-  private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_$2()
   public java.lang.String getLabel()
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_$1()
+  private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_$2()
   public boolean equals(java.lang.Object)
   public java.lang.String toString()
   public int hashCode()
@@ -3808,9 +3808,11 @@ Methods:
   public boolean isPrivate()
   public java.lang.Long getDuration()
   public dev.brahmkshatriya.echo.common.models.Date getDate()
-  public final dev.brahmkshatriya.echo.common.models.Date getCreationDate()
   public final java.lang.String component10()
   public java.lang.String getDescription()
+  public final boolean isEditable()
+  public static dev.brahmkshatriya.echo.common.models.Playlist copy$default(dev.brahmkshatriya.echo.common.models.Playlist, java.lang.String, java.lang.String, boolean, boolean, dev.brahmkshatriya.echo.common.models.ImageHolder, java.util.List, java.lang.Long, java.lang.Long, dev.brahmkshatriya.echo.common.models.Date, java.lang.String, dev.brahmkshatriya.echo.common.models.ImageHolder, java.lang.String, java.util.Map, boolean, boolean, boolean, boolean, boolean, boolean, int, java.lang.Object)
+  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Playlist, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
   public dev.brahmkshatriya.echo.common.models.ImageHolder getCover()
   public java.lang.String getSubtitle()
   public java.util.Map getExtras()
@@ -3819,11 +3821,19 @@ Methods:
   public final boolean component3()
   public final boolean component4()
   public final dev.brahmkshatriya.echo.common.models.ImageHolder component5()
-  public static dev.brahmkshatriya.echo.common.models.Playlist copy$default(dev.brahmkshatriya.echo.common.models.Playlist, java.lang.String, java.lang.String, boolean, boolean, dev.brahmkshatriya.echo.common.models.ImageHolder, java.util.List, java.lang.Long, java.lang.Long, dev.brahmkshatriya.echo.common.models.Date, java.lang.String, dev.brahmkshatriya.echo.common.models.ImageHolder, java.lang.String, java.util.Map, boolean, boolean, boolean, boolean, boolean, boolean, int, java.lang.Object)
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_()
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_$0()
   public static final [Lkotlin.Lazy; access$get$childSerializers$cp()
-  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Playlist, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
+  public java.lang.String getTitle()
+  public java.util.List getArtists()
+  public boolean isExplicit()
+  public boolean isRadioSupported()
+  public boolean isFollowable()
+  public boolean isSaveable()
+  public boolean isLikeable()
+  public boolean isHideable()
+  public boolean isShareable()
+  public dev.brahmkshatriya.echo.common.models.ImageHolder getBackground()
   public java.lang.String getSubtitleWithOutE()
   public final java.util.List component6()
   public final java.lang.Long component7()
@@ -3833,20 +3843,10 @@ Methods:
   public final java.lang.String component12()
   public final java.util.Map component13()
   public final boolean component14()
-  public boolean isExplicit()
   public java.lang.String getSubtitleWithE()
   public boolean sameAs(dev.brahmkshatriya.echo.common.models.EchoMediaItem)
   public dev.brahmkshatriya.echo.common.models.Shelf$Item toShelf()
   public dev.brahmkshatriya.echo.common.models.EchoMediaItem copyMediaItem(java.lang.String, java.lang.String, dev.brahmkshatriya.echo.common.models.ImageHolder, java.lang.String, java.lang.String, java.util.Map, boolean, boolean, boolean)
-  public dev.brahmkshatriya.echo.common.models.ImageHolder getBackground()
-  public java.lang.String getTitle()
-  public boolean isRadioSupported()
-  public boolean isFollowable()
-  public boolean isSaveable()
-  public boolean isLikeable()
-  public boolean isHideable()
-  public boolean isShareable()
-  public java.util.List getArtists()
   public java.lang.Long getTrackCount()
   public final boolean component15()
   public final boolean component16()
@@ -3854,8 +3854,8 @@ Methods:
   public final boolean component18()
   public final boolean component19()
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_$3()
-  public final boolean isEditable()
   public final java.util.List getAuthors()
+  public final dev.brahmkshatriya.echo.common.models.Date getCreationDate()
 ========================================
 
 ========================================
@@ -3873,12 +3873,12 @@ Fields:
 
 Methods:
   public final kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
+  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Playlist)
+  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+  public final dev.brahmkshatriya.echo.common.models.Playlist deserialize(kotlinx.serialization.encoding.Decoder)
   public final [Lkotlinx.serialization.KSerializer; childSerializers()
   public [Lkotlinx.serialization.KSerializer; typeParametersSerializers()
-  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Playlist)
-  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
-  public final dev.brahmkshatriya.echo.common.models.Playlist deserialize(kotlinx.serialization.encoding.Decoder)
-  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
 ========================================
 
 ========================================
@@ -3941,13 +3941,13 @@ Methods:
   public int hashCode()
   public final dev.brahmkshatriya.echo.common.models.Progress copy(long, long, long)
   public final long getSize()
-  public final long getProgress()
-  public final long getSpeed()
+  public static dev.brahmkshatriya.echo.common.models.Progress copy$default(dev.brahmkshatriya.echo.common.models.Progress, long, long, long, int, java.lang.Object)
+  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Progress, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
   public final long component1()
   public final long component2()
   public final long component3()
-  public static dev.brahmkshatriya.echo.common.models.Progress copy$default(dev.brahmkshatriya.echo.common.models.Progress, long, long, long, int, java.lang.Object)
-  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Progress, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
+  public final long getProgress()
+  public final long getSpeed()
 ========================================
 
 ========================================
@@ -3965,12 +3965,12 @@ Fields:
 
 Methods:
   public final kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
+  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Progress)
+  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+  public final dev.brahmkshatriya.echo.common.models.Progress deserialize(kotlinx.serialization.encoding.Decoder)
   public final [Lkotlinx.serialization.KSerializer; childSerializers()
   public [Lkotlinx.serialization.KSerializer; typeParametersSerializers()
-  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Progress)
-  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
-  public final dev.brahmkshatriya.echo.common.models.Progress deserialize(kotlinx.serialization.encoding.Decoder)
-  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
 ========================================
 
 ========================================
@@ -4006,11 +4006,11 @@ Fields:
 
 Methods:
   public static final void write$Self(dev.brahmkshatriya.echo.common.models.QuickSearchItem, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
-  public final boolean sameAs(dev.brahmkshatriya.echo.common.models.QuickSearchItem)
+  public abstract boolean getSearched()
   public java.lang.String getTitle()
+  public final boolean sameAs(dev.brahmkshatriya.echo.common.models.QuickSearchItem)
   private static final kotlinx.serialization.KSerializer _init_$_anonymous_()
   public static final kotlin.Lazy access$get$cachedSerializer$delegate$cp()
-  public abstract boolean getSearched()
 ========================================
 
 ========================================
@@ -4051,13 +4051,13 @@ Methods:
   public java.lang.String toString()
   public int hashCode()
   public final dev.brahmkshatriya.echo.common.models.QuickSearchItem$Media copy(dev.brahmkshatriya.echo.common.models.EchoMediaItem, boolean)
+  public final dev.brahmkshatriya.echo.common.models.EchoMediaItem getMedia()
+  public static dev.brahmkshatriya.echo.common.models.QuickSearchItem$Media copy$default(dev.brahmkshatriya.echo.common.models.QuickSearchItem$Media, dev.brahmkshatriya.echo.common.models.EchoMediaItem, boolean, int, java.lang.Object)
+  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.QuickSearchItem$Media, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
   public final dev.brahmkshatriya.echo.common.models.EchoMediaItem component1()
   public final boolean component2()
-  public static dev.brahmkshatriya.echo.common.models.QuickSearchItem$Media copy$default(dev.brahmkshatriya.echo.common.models.QuickSearchItem$Media, dev.brahmkshatriya.echo.common.models.EchoMediaItem, boolean, int, java.lang.Object)
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_()
   public static final [Lkotlin.Lazy; access$get$childSerializers$cp()
-  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.QuickSearchItem$Media, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
-  public final dev.brahmkshatriya.echo.common.models.EchoMediaItem getMedia()
   public boolean getSearched()
 ========================================
 
@@ -4076,12 +4076,12 @@ Fields:
 
 Methods:
   public final kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
+  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.QuickSearchItem$Media)
+  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+  public final dev.brahmkshatriya.echo.common.models.QuickSearchItem$Media deserialize(kotlinx.serialization.encoding.Decoder)
   public final [Lkotlinx.serialization.KSerializer; childSerializers()
   public [Lkotlinx.serialization.KSerializer; typeParametersSerializers()
-  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.QuickSearchItem$Media)
-  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
-  public final dev.brahmkshatriya.echo.common.models.QuickSearchItem$Media deserialize(kotlinx.serialization.encoding.Decoder)
-  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
 ========================================
 
 ========================================
@@ -4124,14 +4124,14 @@ Methods:
   public int hashCode()
   public final dev.brahmkshatriya.echo.common.models.QuickSearchItem$Query copy(java.lang.String, boolean, java.util.Map)
   public final java.lang.String getQuery()
+  public static dev.brahmkshatriya.echo.common.models.QuickSearchItem$Query copy$default(dev.brahmkshatriya.echo.common.models.QuickSearchItem$Query, java.lang.String, boolean, java.util.Map, int, java.lang.Object)
+  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.QuickSearchItem$Query, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
   public final java.util.Map getExtras()
   public final java.lang.String component1()
   public final boolean component2()
   public final java.util.Map component3()
-  public static dev.brahmkshatriya.echo.common.models.QuickSearchItem$Query copy$default(dev.brahmkshatriya.echo.common.models.QuickSearchItem$Query, java.lang.String, boolean, java.util.Map, int, java.lang.Object)
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_()
   public static final [Lkotlin.Lazy; access$get$childSerializers$cp()
-  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.QuickSearchItem$Query, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
   public boolean getSearched()
 ========================================
 
@@ -4150,12 +4150,12 @@ Fields:
 
 Methods:
   public final kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
+  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.QuickSearchItem$Query)
+  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+  public final dev.brahmkshatriya.echo.common.models.QuickSearchItem$Query deserialize(kotlinx.serialization.encoding.Decoder)
   public final [Lkotlinx.serialization.KSerializer; childSerializers()
   public [Lkotlinx.serialization.KSerializer; typeParametersSerializers()
-  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.QuickSearchItem$Query)
-  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
-  public final dev.brahmkshatriya.echo.common.models.QuickSearchItem$Query deserialize(kotlinx.serialization.encoding.Decoder)
-  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
 ========================================
 
 ========================================
@@ -4226,9 +4226,9 @@ Fields:
   private static final [Lkotlin.Lazy; $childSerializers
 
 Methods:
-  private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_$2()
   public java.lang.String getLabel()
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_$1()
+  private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_$2()
   public boolean equals(java.lang.Object)
   public java.lang.String toString()
   public int hashCode()
@@ -4240,6 +4240,8 @@ Methods:
   public dev.brahmkshatriya.echo.common.models.Date getDate()
   public final boolean component10()
   public java.lang.String getDescription()
+  public static dev.brahmkshatriya.echo.common.models.Radio copy$default(dev.brahmkshatriya.echo.common.models.Radio, java.lang.String, java.lang.String, dev.brahmkshatriya.echo.common.models.ImageHolder, java.util.List, java.lang.Long, java.lang.String, java.lang.String, java.util.Map, boolean, boolean, boolean, boolean, boolean, int, java.lang.Object)
+  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Radio, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
   public dev.brahmkshatriya.echo.common.models.ImageHolder getCover()
   public java.lang.String getSubtitle()
   public java.util.Map getExtras()
@@ -4248,11 +4250,19 @@ Methods:
   public final dev.brahmkshatriya.echo.common.models.ImageHolder component3()
   public final java.util.List component4()
   public final java.lang.Long component5()
-  public static dev.brahmkshatriya.echo.common.models.Radio copy$default(dev.brahmkshatriya.echo.common.models.Radio, java.lang.String, java.lang.String, dev.brahmkshatriya.echo.common.models.ImageHolder, java.util.List, java.lang.Long, java.lang.String, java.lang.String, java.util.Map, boolean, boolean, boolean, boolean, boolean, int, java.lang.Object)
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_()
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_$0()
   public static final [Lkotlin.Lazy; access$get$childSerializers$cp()
-  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Radio, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
+  public java.lang.String getTitle()
+  public java.util.List getArtists()
+  public boolean isExplicit()
+  public boolean isRadioSupported()
+  public boolean isFollowable()
+  public boolean isSaveable()
+  public boolean isLikeable()
+  public boolean isHideable()
+  public boolean isShareable()
+  public dev.brahmkshatriya.echo.common.models.ImageHolder getBackground()
   public java.lang.String getSubtitleWithOutE()
   public final java.lang.String component6()
   public final java.lang.String component7()
@@ -4261,20 +4271,10 @@ Methods:
   public final boolean component11()
   public final boolean component12()
   public final boolean component13()
-  public boolean isExplicit()
   public java.lang.String getSubtitleWithE()
   public boolean sameAs(dev.brahmkshatriya.echo.common.models.EchoMediaItem)
   public dev.brahmkshatriya.echo.common.models.Shelf$Item toShelf()
   public dev.brahmkshatriya.echo.common.models.EchoMediaItem copyMediaItem(java.lang.String, java.lang.String, dev.brahmkshatriya.echo.common.models.ImageHolder, java.lang.String, java.lang.String, java.util.Map, boolean, boolean, boolean)
-  public dev.brahmkshatriya.echo.common.models.ImageHolder getBackground()
-  public java.lang.String getTitle()
-  public boolean isRadioSupported()
-  public boolean isFollowable()
-  public boolean isSaveable()
-  public boolean isLikeable()
-  public boolean isHideable()
-  public boolean isShareable()
-  public java.util.List getArtists()
   public java.lang.Long getTrackCount()
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_$3()
   public final java.util.List getAuthors()
@@ -4295,12 +4295,12 @@ Fields:
 
 Methods:
   public final kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
+  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Radio)
+  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+  public final dev.brahmkshatriya.echo.common.models.Radio deserialize(kotlinx.serialization.encoding.Decoder)
   public final [Lkotlinx.serialization.KSerializer; childSerializers()
   public [Lkotlinx.serialization.KSerializer; typeParametersSerializers()
-  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Radio)
-  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
-  public final dev.brahmkshatriya.echo.common.models.Radio deserialize(kotlinx.serialization.encoding.Decoder)
-  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
 ========================================
 
 ========================================
@@ -4384,6 +4384,8 @@ Methods:
   public int hashCode()
   public java.lang.String getId()
   public final dev.brahmkshatriya.echo.common.models.Shelf$Category copy(java.lang.String, java.lang.String, dev.brahmkshatriya.echo.common.models.Feed, java.lang.String, dev.brahmkshatriya.echo.common.models.ImageHolder, java.lang.String, java.util.Map)
+  public static dev.brahmkshatriya.echo.common.models.Shelf$Category copy$default(dev.brahmkshatriya.echo.common.models.Shelf$Category, java.lang.String, java.lang.String, dev.brahmkshatriya.echo.common.models.Feed, java.lang.String, dev.brahmkshatriya.echo.common.models.ImageHolder, java.lang.String, java.util.Map, int, java.lang.Object)
+  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Shelf$Category, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
   public final java.lang.String getSubtitle()
   public java.util.Map getExtras()
   public final java.lang.String component1()
@@ -4391,18 +4393,16 @@ Methods:
   public final dev.brahmkshatriya.echo.common.models.Feed component3()
   public final java.lang.String component4()
   public final dev.brahmkshatriya.echo.common.models.ImageHolder component5()
-  public static dev.brahmkshatriya.echo.common.models.Shelf$Category copy$default(dev.brahmkshatriya.echo.common.models.Shelf$Category, java.lang.String, java.lang.String, dev.brahmkshatriya.echo.common.models.Feed, java.lang.String, dev.brahmkshatriya.echo.common.models.ImageHolder, java.lang.String, java.util.Map, int, java.lang.Object)
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_()
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_$0()
   public static final [Lkotlin.Lazy; access$get$childSerializers$cp()
-  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Shelf$Category, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
-  public final java.lang.String component6()
-  public final java.util.Map component7()
-  public java.lang.String getTitle()
   public final dev.brahmkshatriya.echo.common.models.Feed getFeed()
   public static void getFeed$annotations()
   public final dev.brahmkshatriya.echo.common.models.ImageHolder getImage()
   public final java.lang.String getBackgroundColor()
+  public java.lang.String getTitle()
+  public final java.lang.String component6()
+  public final java.util.Map component7()
 ========================================
 
 ========================================
@@ -4420,12 +4420,12 @@ Fields:
 
 Methods:
   public final kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
+  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Shelf$Category)
+  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+  public final dev.brahmkshatriya.echo.common.models.Shelf$Category deserialize(kotlinx.serialization.encoding.Decoder)
   public final [Lkotlinx.serialization.KSerializer; childSerializers()
   public [Lkotlinx.serialization.KSerializer; typeParametersSerializers()
-  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Shelf$Category)
-  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
-  public final dev.brahmkshatriya.echo.common.models.Shelf$Category deserialize(kotlinx.serialization.encoding.Decoder)
-  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
 ========================================
 
 ========================================
@@ -4484,14 +4484,14 @@ Methods:
   public int hashCode()
   public java.lang.String getId()
   public final dev.brahmkshatriya.echo.common.models.Shelf$Item copy(dev.brahmkshatriya.echo.common.models.EchoMediaItem)
+  public final dev.brahmkshatriya.echo.common.models.EchoMediaItem getMedia()
+  public static dev.brahmkshatriya.echo.common.models.Shelf$Item copy$default(dev.brahmkshatriya.echo.common.models.Shelf$Item, dev.brahmkshatriya.echo.common.models.EchoMediaItem, int, java.lang.Object)
+  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Shelf$Item, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
   public java.util.Map getExtras()
   public final dev.brahmkshatriya.echo.common.models.EchoMediaItem component1()
-  public static dev.brahmkshatriya.echo.common.models.Shelf$Item copy$default(dev.brahmkshatriya.echo.common.models.Shelf$Item, dev.brahmkshatriya.echo.common.models.EchoMediaItem, int, java.lang.Object)
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_()
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_$0()
   public static final [Lkotlin.Lazy; access$get$childSerializers$cp()
-  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Shelf$Item, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
-  public final dev.brahmkshatriya.echo.common.models.EchoMediaItem getMedia()
   public java.lang.String getTitle()
 ========================================
 
@@ -4510,12 +4510,12 @@ Fields:
 
 Methods:
   public final kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
+  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Shelf$Item)
+  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+  public final dev.brahmkshatriya.echo.common.models.Shelf$Item deserialize(kotlinx.serialization.encoding.Decoder)
   public final [Lkotlinx.serialization.KSerializer; childSerializers()
   public [Lkotlinx.serialization.KSerializer; typeParametersSerializers()
-  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Shelf$Item)
-  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
-  public final dev.brahmkshatriya.echo.common.models.Shelf$Item deserialize(kotlinx.serialization.encoding.Decoder)
-  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
 ========================================
 
 ========================================
@@ -4548,8 +4548,8 @@ Fields:
 Methods:
   public abstract dev.brahmkshatriya.echo.common.models.Shelf$Lists$Type getType()
   public abstract dev.brahmkshatriya.echo.common.models.Feed getMore()
-  public abstract java.lang.String getSubtitle()
   public abstract java.util.List getList()
+  public abstract java.lang.String getSubtitle()
 ========================================
 
 ========================================
@@ -4584,6 +4584,9 @@ Methods:
   public final dev.brahmkshatriya.echo.common.models.Shelf$Lists$Categories copy(java.lang.String, java.lang.String, java.util.List, java.lang.String, dev.brahmkshatriya.echo.common.models.Shelf$Lists$Type, dev.brahmkshatriya.echo.common.models.Feed, java.util.Map)
   public dev.brahmkshatriya.echo.common.models.Feed getMore()
   public static void getMore$annotations()
+  public java.util.List getList()
+  public static dev.brahmkshatriya.echo.common.models.Shelf$Lists$Categories copy$default(dev.brahmkshatriya.echo.common.models.Shelf$Lists$Categories, java.lang.String, java.lang.String, java.util.List, java.lang.String, dev.brahmkshatriya.echo.common.models.Shelf$Lists$Type, dev.brahmkshatriya.echo.common.models.Feed, java.util.Map, int, java.lang.Object)
+  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Shelf$Lists$Categories, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
   public java.lang.String getSubtitle()
   public java.util.Map getExtras()
   public final java.lang.String component1()
@@ -4591,15 +4594,12 @@ Methods:
   public final java.util.List component3()
   public final java.lang.String component4()
   public final dev.brahmkshatriya.echo.common.models.Shelf$Lists$Type component5()
-  public static dev.brahmkshatriya.echo.common.models.Shelf$Lists$Categories copy$default(dev.brahmkshatriya.echo.common.models.Shelf$Lists$Categories, java.lang.String, java.lang.String, java.util.List, java.lang.String, dev.brahmkshatriya.echo.common.models.Shelf$Lists$Type, dev.brahmkshatriya.echo.common.models.Feed, java.util.Map, int, java.lang.Object)
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_()
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_$0()
   public static final [Lkotlin.Lazy; access$get$childSerializers$cp()
-  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Shelf$Lists$Categories, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
-  public java.util.List getList()
+  public java.lang.String getTitle()
   public final dev.brahmkshatriya.echo.common.models.Feed component6()
   public final java.util.Map component7()
-  public java.lang.String getTitle()
 ========================================
 
 ========================================
@@ -4617,12 +4617,12 @@ Fields:
 
 Methods:
   public final kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
+  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Shelf$Lists$Categories)
+  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+  public final dev.brahmkshatriya.echo.common.models.Shelf$Lists$Categories deserialize(kotlinx.serialization.encoding.Decoder)
   public final [Lkotlinx.serialization.KSerializer; childSerializers()
   public [Lkotlinx.serialization.KSerializer; typeParametersSerializers()
-  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Shelf$Lists$Categories)
-  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
-  public final dev.brahmkshatriya.echo.common.models.Shelf$Lists$Categories deserialize(kotlinx.serialization.encoding.Decoder)
-  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
 ========================================
 
 ========================================
@@ -4689,6 +4689,9 @@ Methods:
   public final dev.brahmkshatriya.echo.common.models.Shelf$Lists$Items copy(java.lang.String, java.lang.String, java.util.List, java.lang.String, dev.brahmkshatriya.echo.common.models.Shelf$Lists$Type, dev.brahmkshatriya.echo.common.models.Feed, java.util.Map)
   public dev.brahmkshatriya.echo.common.models.Feed getMore()
   public static void getMore$annotations()
+  public java.util.List getList()
+  public static dev.brahmkshatriya.echo.common.models.Shelf$Lists$Items copy$default(dev.brahmkshatriya.echo.common.models.Shelf$Lists$Items, java.lang.String, java.lang.String, java.util.List, java.lang.String, dev.brahmkshatriya.echo.common.models.Shelf$Lists$Type, dev.brahmkshatriya.echo.common.models.Feed, java.util.Map, int, java.lang.Object)
+  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Shelf$Lists$Items, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
   public java.lang.String getSubtitle()
   public java.util.Map getExtras()
   public final java.lang.String component1()
@@ -4696,15 +4699,12 @@ Methods:
   public final java.util.List component3()
   public final java.lang.String component4()
   public final dev.brahmkshatriya.echo.common.models.Shelf$Lists$Type component5()
-  public static dev.brahmkshatriya.echo.common.models.Shelf$Lists$Items copy$default(dev.brahmkshatriya.echo.common.models.Shelf$Lists$Items, java.lang.String, java.lang.String, java.util.List, java.lang.String, dev.brahmkshatriya.echo.common.models.Shelf$Lists$Type, dev.brahmkshatriya.echo.common.models.Feed, java.util.Map, int, java.lang.Object)
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_()
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_$0()
   public static final [Lkotlin.Lazy; access$get$childSerializers$cp()
-  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Shelf$Lists$Items, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
-  public java.util.List getList()
+  public java.lang.String getTitle()
   public final dev.brahmkshatriya.echo.common.models.Feed component6()
   public final java.util.Map component7()
-  public java.lang.String getTitle()
 ========================================
 
 ========================================
@@ -4722,12 +4722,12 @@ Fields:
 
 Methods:
   public final kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
+  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Shelf$Lists$Items)
+  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+  public final dev.brahmkshatriya.echo.common.models.Shelf$Lists$Items deserialize(kotlinx.serialization.encoding.Decoder)
   public final [Lkotlinx.serialization.KSerializer; childSerializers()
   public [Lkotlinx.serialization.KSerializer; typeParametersSerializers()
-  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Shelf$Lists$Items)
-  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
-  public final dev.brahmkshatriya.echo.common.models.Shelf$Lists$Items deserialize(kotlinx.serialization.encoding.Decoder)
-  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
 ========================================
 
 ========================================
@@ -4798,6 +4798,9 @@ Methods:
   public final dev.brahmkshatriya.echo.common.models.Shelf$Lists$Tracks copy(java.lang.String, java.lang.String, java.util.List, java.lang.String, dev.brahmkshatriya.echo.common.models.Shelf$Lists$Type, dev.brahmkshatriya.echo.common.models.Feed, java.util.Map)
   public dev.brahmkshatriya.echo.common.models.Feed getMore()
   public static void getMore$annotations()
+  public java.util.List getList()
+  public static dev.brahmkshatriya.echo.common.models.Shelf$Lists$Tracks copy$default(dev.brahmkshatriya.echo.common.models.Shelf$Lists$Tracks, java.lang.String, java.lang.String, java.util.List, java.lang.String, dev.brahmkshatriya.echo.common.models.Shelf$Lists$Type, dev.brahmkshatriya.echo.common.models.Feed, java.util.Map, int, java.lang.Object)
+  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Shelf$Lists$Tracks, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
   public java.lang.String getSubtitle()
   public java.util.Map getExtras()
   public final java.lang.String component1()
@@ -4805,15 +4808,12 @@ Methods:
   public final java.util.List component3()
   public final java.lang.String component4()
   public final dev.brahmkshatriya.echo.common.models.Shelf$Lists$Type component5()
-  public static dev.brahmkshatriya.echo.common.models.Shelf$Lists$Tracks copy$default(dev.brahmkshatriya.echo.common.models.Shelf$Lists$Tracks, java.lang.String, java.lang.String, java.util.List, java.lang.String, dev.brahmkshatriya.echo.common.models.Shelf$Lists$Type, dev.brahmkshatriya.echo.common.models.Feed, java.util.Map, int, java.lang.Object)
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_()
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_$0()
   public static final [Lkotlin.Lazy; access$get$childSerializers$cp()
-  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Shelf$Lists$Tracks, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
-  public java.util.List getList()
+  public java.lang.String getTitle()
   public final dev.brahmkshatriya.echo.common.models.Feed component6()
   public final java.util.Map component7()
-  public java.lang.String getTitle()
 ========================================
 
 ========================================
@@ -4831,12 +4831,12 @@ Fields:
 
 Methods:
   public final kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
+  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Shelf$Lists$Tracks)
+  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+  public final dev.brahmkshatriya.echo.common.models.Shelf$Lists$Tracks deserialize(kotlinx.serialization.encoding.Decoder)
   public final [Lkotlinx.serialization.KSerializer; childSerializers()
   public [Lkotlinx.serialization.KSerializer; typeParametersSerializers()
-  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Shelf$Lists$Tracks)
-  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
-  public final dev.brahmkshatriya.echo.common.models.Shelf$Lists$Tracks deserialize(kotlinx.serialization.encoding.Decoder)
-  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
 ========================================
 
 ========================================
@@ -4904,17 +4904,17 @@ Methods:
   public final java.lang.String getId()
   public final dev.brahmkshatriya.echo.common.models.Streamable$MediaType getType()
   public final dev.brahmkshatriya.echo.common.models.Streamable copy(java.lang.String, int, dev.brahmkshatriya.echo.common.models.Streamable$MediaType, java.lang.String, java.util.Map)
+  public static dev.brahmkshatriya.echo.common.models.Streamable copy$default(dev.brahmkshatriya.echo.common.models.Streamable, java.lang.String, int, dev.brahmkshatriya.echo.common.models.Streamable$MediaType, java.lang.String, java.util.Map, int, java.lang.Object)
+  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Streamable, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
   public final java.util.Map getExtras()
   public final java.lang.String component1()
   public final int component2()
   public final dev.brahmkshatriya.echo.common.models.Streamable$MediaType component3()
   public final java.lang.String component4()
   public final java.util.Map component5()
-  public static dev.brahmkshatriya.echo.common.models.Streamable copy$default(dev.brahmkshatriya.echo.common.models.Streamable, java.lang.String, int, dev.brahmkshatriya.echo.common.models.Streamable$MediaType, java.lang.String, java.util.Map, int, java.lang.Object)
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_()
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_$0()
   public static final [Lkotlin.Lazy; access$get$childSerializers$cp()
-  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Streamable, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
   public final int getQuality()
   public final java.lang.String getTitle()
 ========================================
@@ -4934,12 +4934,12 @@ Fields:
 
 Methods:
   public final kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
+  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Streamable)
+  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+  public final dev.brahmkshatriya.echo.common.models.Streamable deserialize(kotlinx.serialization.encoding.Decoder)
   public final [Lkotlinx.serialization.KSerializer; childSerializers()
   public [Lkotlinx.serialization.KSerializer; typeParametersSerializers()
-  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Streamable)
-  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
-  public final dev.brahmkshatriya.echo.common.models.Streamable deserialize(kotlinx.serialization.encoding.Decoder)
-  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
 ========================================
 
 ========================================
@@ -4955,13 +4955,13 @@ Constructors:
 Fields:
 
 Methods:
-  public final dev.brahmkshatriya.echo.common.models.Streamable server(java.lang.String, int, java.lang.String, java.util.Map)
   public final kotlinx.serialization.KSerializer serializer()
   public final dev.brahmkshatriya.echo.common.models.Streamable subtitle(java.lang.String, java.lang.String, java.util.Map)
   public final dev.brahmkshatriya.echo.common.models.Streamable background(java.lang.String, int, java.lang.String, java.util.Map)
   public static dev.brahmkshatriya.echo.common.models.Streamable server$default(dev.brahmkshatriya.echo.common.models.Streamable$Companion, java.lang.String, int, java.lang.String, java.util.Map, int, java.lang.Object)
   public static dev.brahmkshatriya.echo.common.models.Streamable background$default(dev.brahmkshatriya.echo.common.models.Streamable$Companion, java.lang.String, int, java.lang.String, java.util.Map, int, java.lang.Object)
   public static dev.brahmkshatriya.echo.common.models.Streamable subtitle$default(dev.brahmkshatriya.echo.common.models.Streamable$Companion, java.lang.String, java.lang.String, java.util.Map, int, java.lang.Object)
+  public final dev.brahmkshatriya.echo.common.models.Streamable server(java.lang.String, int, java.lang.String, java.util.Map)
 ========================================
 
 ========================================
@@ -5022,10 +5022,10 @@ Methods:
   public java.lang.String toString()
   public int hashCode()
   public final dev.brahmkshatriya.echo.common.models.Streamable$Decryption$Widevine copy(dev.brahmkshatriya.echo.common.models.NetworkRequest, boolean)
-  public final dev.brahmkshatriya.echo.common.models.NetworkRequest component1()
-  public final boolean component2()
   public static dev.brahmkshatriya.echo.common.models.Streamable$Decryption$Widevine copy$default(dev.brahmkshatriya.echo.common.models.Streamable$Decryption$Widevine, dev.brahmkshatriya.echo.common.models.NetworkRequest, boolean, int, java.lang.Object)
   public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Streamable$Decryption$Widevine, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
+  public final dev.brahmkshatriya.echo.common.models.NetworkRequest component1()
+  public final boolean component2()
   public final boolean isMultiSession()
   public final dev.brahmkshatriya.echo.common.models.NetworkRequest getLicense()
 ========================================
@@ -5045,12 +5045,12 @@ Fields:
 
 Methods:
   public final kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
+  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Streamable$Decryption$Widevine)
+  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+  public final dev.brahmkshatriya.echo.common.models.Streamable$Decryption$Widevine deserialize(kotlinx.serialization.encoding.Decoder)
   public final [Lkotlinx.serialization.KSerializer; childSerializers()
   public [Lkotlinx.serialization.KSerializer; typeParametersSerializers()
-  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Streamable$Decryption$Widevine)
-  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
-  public final dev.brahmkshatriya.echo.common.models.Streamable$Decryption$Widevine deserialize(kotlinx.serialization.encoding.Decoder)
-  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
 ========================================
 
 ========================================
@@ -5123,9 +5123,9 @@ Methods:
   public java.lang.String toString()
   public int hashCode()
   public final dev.brahmkshatriya.echo.common.models.Streamable$Media$Background copy(dev.brahmkshatriya.echo.common.models.NetworkRequest)
-  public final dev.brahmkshatriya.echo.common.models.NetworkRequest component1()
   public static dev.brahmkshatriya.echo.common.models.Streamable$Media$Background copy$default(dev.brahmkshatriya.echo.common.models.Streamable$Media$Background, dev.brahmkshatriya.echo.common.models.NetworkRequest, int, java.lang.Object)
   public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Streamable$Media$Background, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
+  public final dev.brahmkshatriya.echo.common.models.NetworkRequest component1()
   public final dev.brahmkshatriya.echo.common.models.NetworkRequest getRequest()
 ========================================
 
@@ -5144,12 +5144,12 @@ Fields:
 
 Methods:
   public final kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
+  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Streamable$Media$Background)
+  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+  public final dev.brahmkshatriya.echo.common.models.Streamable$Media$Background deserialize(kotlinx.serialization.encoding.Decoder)
   public final [Lkotlinx.serialization.KSerializer; childSerializers()
   public [Lkotlinx.serialization.KSerializer; typeParametersSerializers()
-  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Streamable$Media$Background)
-  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
-  public final dev.brahmkshatriya.echo.common.models.Streamable$Media$Background deserialize(kotlinx.serialization.encoding.Decoder)
-  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
 ========================================
 
 ========================================
@@ -5181,13 +5181,13 @@ Constructors:
 Fields:
 
 Methods:
-  public final kotlinx.serialization.KSerializer serializer()
+  public final dev.brahmkshatriya.echo.common.models.Streamable$Media$Server toMedia(dev.brahmkshatriya.echo.common.models.Streamable$Source)
   public final dev.brahmkshatriya.echo.common.models.Streamable$Media$Background toBackgroundMedia(java.lang.String, java.util.Map)
   public static dev.brahmkshatriya.echo.common.models.Streamable$Media$Background toBackgroundMedia$default(dev.brahmkshatriya.echo.common.models.Streamable$Media$Companion, java.lang.String, java.util.Map, int, java.lang.Object)
   public final dev.brahmkshatriya.echo.common.models.Streamable$Media$Server toServerMedia(java.lang.String, java.util.Map, dev.brahmkshatriya.echo.common.models.Streamable$SourceType, boolean)
-  public final dev.brahmkshatriya.echo.common.models.Streamable$Media$Server toMedia(dev.brahmkshatriya.echo.common.models.Streamable$Source)
   public static dev.brahmkshatriya.echo.common.models.Streamable$Media$Server toServerMedia$default(dev.brahmkshatriya.echo.common.models.Streamable$Media$Companion, java.lang.String, java.util.Map, dev.brahmkshatriya.echo.common.models.Streamable$SourceType, boolean, int, java.lang.Object)
   public final dev.brahmkshatriya.echo.common.models.Streamable$Media$Subtitle toSubtitleMedia(java.lang.String, dev.brahmkshatriya.echo.common.models.Streamable$SubtitleType)
+  public final kotlinx.serialization.KSerializer serializer()
   private final kotlinx.serialization.KSerializer get$cachedSerializer()
 ========================================
 
@@ -5212,14 +5212,14 @@ Methods:
   public java.lang.String toString()
   public int hashCode()
   public final dev.brahmkshatriya.echo.common.models.Streamable$Media$Server copy(java.util.List, boolean)
-  public final java.util.List component1()
-  public final boolean component2()
-  public static dev.brahmkshatriya.echo.common.models.Streamable$Media$Server copy$default(dev.brahmkshatriya.echo.common.models.Streamable$Media$Server, java.util.List, boolean, int, java.lang.Object)
-  private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_()
-  public static final [Lkotlin.Lazy; access$get$childSerializers$cp()
-  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Streamable$Media$Server, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
   public final java.util.List getSources()
   public final boolean getMerged()
+  public static dev.brahmkshatriya.echo.common.models.Streamable$Media$Server copy$default(dev.brahmkshatriya.echo.common.models.Streamable$Media$Server, java.util.List, boolean, int, java.lang.Object)
+  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Streamable$Media$Server, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
+  public final java.util.List component1()
+  public final boolean component2()
+  private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_()
+  public static final [Lkotlin.Lazy; access$get$childSerializers$cp()
 ========================================
 
 ========================================
@@ -5237,12 +5237,12 @@ Fields:
 
 Methods:
   public final kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
+  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Streamable$Media$Server)
+  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+  public final dev.brahmkshatriya.echo.common.models.Streamable$Media$Server deserialize(kotlinx.serialization.encoding.Decoder)
   public final [Lkotlinx.serialization.KSerializer; childSerializers()
   public [Lkotlinx.serialization.KSerializer; typeParametersSerializers()
-  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Streamable$Media$Server)
-  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
-  public final dev.brahmkshatriya.echo.common.models.Streamable$Media$Server deserialize(kotlinx.serialization.encoding.Decoder)
-  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
 ========================================
 
 ========================================
@@ -5283,12 +5283,12 @@ Methods:
   public int hashCode()
   public final dev.brahmkshatriya.echo.common.models.Streamable$SubtitleType getType()
   public final dev.brahmkshatriya.echo.common.models.Streamable$Media$Subtitle copy(java.lang.String, dev.brahmkshatriya.echo.common.models.Streamable$SubtitleType)
+  public static dev.brahmkshatriya.echo.common.models.Streamable$Media$Subtitle copy$default(dev.brahmkshatriya.echo.common.models.Streamable$Media$Subtitle, java.lang.String, dev.brahmkshatriya.echo.common.models.Streamable$SubtitleType, int, java.lang.Object)
+  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Streamable$Media$Subtitle, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
   public final java.lang.String component1()
   public final dev.brahmkshatriya.echo.common.models.Streamable$SubtitleType component2()
-  public static dev.brahmkshatriya.echo.common.models.Streamable$Media$Subtitle copy$default(dev.brahmkshatriya.echo.common.models.Streamable$Media$Subtitle, java.lang.String, dev.brahmkshatriya.echo.common.models.Streamable$SubtitleType, int, java.lang.Object)
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_()
   public static final [Lkotlin.Lazy; access$get$childSerializers$cp()
-  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Streamable$Media$Subtitle, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
   public final java.lang.String getUrl()
 ========================================
 
@@ -5307,12 +5307,12 @@ Fields:
 
 Methods:
   public final kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
+  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Streamable$Media$Subtitle)
+  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+  public final dev.brahmkshatriya.echo.common.models.Streamable$Media$Subtitle deserialize(kotlinx.serialization.encoding.Decoder)
   public final [Lkotlinx.serialization.KSerializer; childSerializers()
   public [Lkotlinx.serialization.KSerializer; typeParametersSerializers()
-  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Streamable$Media$Subtitle)
-  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
-  public final dev.brahmkshatriya.echo.common.models.Streamable$Media$Subtitle deserialize(kotlinx.serialization.encoding.Decoder)
-  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
 ========================================
 
 ========================================
@@ -5392,12 +5392,12 @@ Fields:
 Methods:
   public abstract java.lang.String getId()
   public abstract boolean isLive()
+  public abstract boolean isVideo()
   public static final void write$Self(dev.brahmkshatriya.echo.common.models.Streamable$Source, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
   public abstract int getQuality()
   public abstract java.lang.String getTitle()
   private static final kotlinx.serialization.KSerializer _init_$_anonymous_()
   public static final kotlin.Lazy access$get$cachedSerializer$delegate$cp()
-  public abstract boolean isVideo()
 ========================================
 
 ========================================
@@ -5413,12 +5413,12 @@ Constructors:
 Fields:
 
 Methods:
+  public final dev.brahmkshatriya.echo.common.models.Streamable$Source$Http toSource(java.lang.String, java.util.Map, dev.brahmkshatriya.echo.common.models.Streamable$SourceType, boolean, boolean)
+  public final dev.brahmkshatriya.echo.common.models.Streamable$Source$Raw toSource(dev.brahmkshatriya.echo.common.models.Streamable$InputProvider, java.lang.String, boolean, boolean)
   public final kotlinx.serialization.KSerializer serializer()
   public static dev.brahmkshatriya.echo.common.models.Streamable$Source$Raw toSource$default(dev.brahmkshatriya.echo.common.models.Streamable$Source$Companion, dev.brahmkshatriya.echo.common.models.Streamable$InputProvider, java.lang.String, boolean, boolean, int, java.lang.Object)
   public static dev.brahmkshatriya.echo.common.models.Streamable$Source$Http toSource$default(dev.brahmkshatriya.echo.common.models.Streamable$Source$Companion, java.lang.String, java.util.Map, dev.brahmkshatriya.echo.common.models.Streamable$SourceType, boolean, boolean, int, java.lang.Object)
   private final kotlinx.serialization.KSerializer get$cachedSerializer()
-  public final dev.brahmkshatriya.echo.common.models.Streamable$Source$Http toSource(java.lang.String, java.util.Map, dev.brahmkshatriya.echo.common.models.Streamable$SourceType, boolean, boolean)
-  public final dev.brahmkshatriya.echo.common.models.Streamable$Source$Raw toSource(dev.brahmkshatriya.echo.common.models.Streamable$InputProvider, java.lang.String, boolean, boolean)
 ========================================
 
 ========================================
@@ -5452,23 +5452,23 @@ Methods:
   public final dev.brahmkshatriya.echo.common.models.Streamable$SourceType getType()
   public final dev.brahmkshatriya.echo.common.models.Streamable$Source$Http copy(dev.brahmkshatriya.echo.common.models.NetworkRequest, dev.brahmkshatriya.echo.common.models.Streamable$SourceType, dev.brahmkshatriya.echo.common.models.Streamable$Decryption, int, java.lang.String, boolean, boolean)
   public boolean isLive()
+  public boolean isVideo()
+  public final dev.brahmkshatriya.echo.common.models.Streamable$Decryption getDecryption()
+  public static dev.brahmkshatriya.echo.common.models.Streamable$Source$Http copy$default(dev.brahmkshatriya.echo.common.models.Streamable$Source$Http, dev.brahmkshatriya.echo.common.models.NetworkRequest, dev.brahmkshatriya.echo.common.models.Streamable$SourceType, dev.brahmkshatriya.echo.common.models.Streamable$Decryption, int, java.lang.String, boolean, boolean, int, java.lang.Object)
+  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Streamable$Source$Http, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
   public final dev.brahmkshatriya.echo.common.models.NetworkRequest component1()
   public final dev.brahmkshatriya.echo.common.models.Streamable$SourceType component2()
   public final dev.brahmkshatriya.echo.common.models.Streamable$Decryption component3()
   public final int component4()
   public final java.lang.String component5()
-  public static dev.brahmkshatriya.echo.common.models.Streamable$Source$Http copy$default(dev.brahmkshatriya.echo.common.models.Streamable$Source$Http, dev.brahmkshatriya.echo.common.models.NetworkRequest, dev.brahmkshatriya.echo.common.models.Streamable$SourceType, dev.brahmkshatriya.echo.common.models.Streamable$Decryption, int, java.lang.String, boolean, boolean, int, java.lang.Object)
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_()
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_$0()
   public static final [Lkotlin.Lazy; access$get$childSerializers$cp()
-  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Streamable$Source$Http, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
-  public final boolean component6()
-  public final boolean component7()
   public int getQuality()
   public java.lang.String getTitle()
   public final dev.brahmkshatriya.echo.common.models.NetworkRequest getRequest()
-  public boolean isVideo()
-  public final dev.brahmkshatriya.echo.common.models.Streamable$Decryption getDecryption()
+  public final boolean component6()
+  public final boolean component7()
 ========================================
 
 ========================================
@@ -5486,12 +5486,12 @@ Fields:
 
 Methods:
   public final kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
+  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Streamable$Source$Http)
+  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+  public final dev.brahmkshatriya.echo.common.models.Streamable$Source$Http deserialize(kotlinx.serialization.encoding.Decoder)
   public final [Lkotlinx.serialization.KSerializer; childSerializers()
   public [Lkotlinx.serialization.KSerializer; typeParametersSerializers()
-  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Streamable$Source$Http)
-  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
-  public final dev.brahmkshatriya.echo.common.models.Streamable$Source$Http deserialize(kotlinx.serialization.encoding.Decoder)
-  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
 ========================================
 
 ========================================
@@ -5537,17 +5537,17 @@ Methods:
   public java.lang.String getId()
   public final dev.brahmkshatriya.echo.common.models.Streamable$Source$Raw copy(dev.brahmkshatriya.echo.common.models.Streamable$InputProvider, java.lang.String, int, java.lang.String, boolean, boolean)
   public boolean isLive()
+  public boolean isVideo()
+  public static dev.brahmkshatriya.echo.common.models.Streamable$Source$Raw copy$default(dev.brahmkshatriya.echo.common.models.Streamable$Source$Raw, dev.brahmkshatriya.echo.common.models.Streamable$InputProvider, java.lang.String, int, java.lang.String, boolean, boolean, int, java.lang.Object)
+  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Streamable$Source$Raw, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
   public final dev.brahmkshatriya.echo.common.models.Streamable$InputProvider component1()
   public final java.lang.String component2()
   public final int component3()
   public final java.lang.String component4()
   public final boolean component5()
-  public static dev.brahmkshatriya.echo.common.models.Streamable$Source$Raw copy$default(dev.brahmkshatriya.echo.common.models.Streamable$Source$Raw, dev.brahmkshatriya.echo.common.models.Streamable$InputProvider, java.lang.String, int, java.lang.String, boolean, boolean, int, java.lang.Object)
-  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Streamable$Source$Raw, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
-  public final boolean component6()
   public int getQuality()
   public java.lang.String getTitle()
-  public boolean isVideo()
+  public final boolean component6()
   public final dev.brahmkshatriya.echo.common.models.Streamable$InputProvider getStreamProvider()
   public static void getStreamProvider$annotations()
 ========================================
@@ -5567,12 +5567,12 @@ Fields:
 
 Methods:
   public final kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
+  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Streamable$Source$Raw)
+  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+  public final dev.brahmkshatriya.echo.common.models.Streamable$Source$Raw deserialize(kotlinx.serialization.encoding.Decoder)
   public final [Lkotlinx.serialization.KSerializer; childSerializers()
   public [Lkotlinx.serialization.KSerializer; typeParametersSerializers()
-  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Streamable$Source$Raw)
-  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
-  public final dev.brahmkshatriya.echo.common.models.Streamable$Source$Raw deserialize(kotlinx.serialization.encoding.Decoder)
-  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
 ========================================
 
 ========================================
@@ -5662,15 +5662,15 @@ Methods:
   public int hashCode()
   public final java.lang.String getId()
   public final dev.brahmkshatriya.echo.common.models.Tab copy(java.lang.String, java.lang.String, boolean, java.util.Map)
+  public static dev.brahmkshatriya.echo.common.models.Tab copy$default(dev.brahmkshatriya.echo.common.models.Tab, java.lang.String, java.lang.String, boolean, java.util.Map, int, java.lang.Object)
+  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Tab, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
   public final java.util.Map getExtras()
   public final java.lang.String component1()
   public final java.lang.String component2()
   public final boolean component3()
   public final java.util.Map component4()
-  public static dev.brahmkshatriya.echo.common.models.Tab copy$default(dev.brahmkshatriya.echo.common.models.Tab, java.lang.String, java.lang.String, boolean, java.util.Map, int, java.lang.Object)
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_()
   public static final [Lkotlin.Lazy; access$get$childSerializers$cp()
-  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Tab, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
   public final java.lang.String getTitle()
   public final boolean isSort()
 ========================================
@@ -5690,12 +5690,12 @@ Fields:
 
 Methods:
   public final kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
+  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Tab)
+  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+  public final dev.brahmkshatriya.echo.common.models.Tab deserialize(kotlinx.serialization.encoding.Decoder)
   public final [Lkotlinx.serialization.KSerializer; childSerializers()
   public [Lkotlinx.serialization.KSerializer; typeParametersSerializers()
-  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Tab)
-  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
-  public final dev.brahmkshatriya.echo.common.models.Tab deserialize(kotlinx.serialization.encoding.Decoder)
-  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
 ========================================
 
 ========================================
@@ -5774,6 +5774,8 @@ Methods:
   public final java.lang.Long getDuration()
   public final dev.brahmkshatriya.echo.common.models.Date component10()
   public java.lang.String getDescription()
+  public static dev.brahmkshatriya.echo.common.models.Track copy$default(dev.brahmkshatriya.echo.common.models.Track, java.lang.String, java.lang.String, dev.brahmkshatriya.echo.common.models.Track$Type, dev.brahmkshatriya.echo.common.models.ImageHolder, java.util.List, dev.brahmkshatriya.echo.common.models.Album, java.lang.Long, java.lang.Long, java.lang.Long, dev.brahmkshatriya.echo.common.models.Date, java.lang.String, dev.brahmkshatriya.echo.common.models.ImageHolder, java.util.List, java.lang.String, java.lang.Long, java.lang.Long, dev.brahmkshatriya.echo.common.models.Date, boolean, java.lang.String, java.util.Map, dev.brahmkshatriya.echo.common.models.Track$Playable, java.util.List, boolean, boolean, boolean, boolean, boolean, boolean, int, java.lang.Object)
+  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Track, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
   public dev.brahmkshatriya.echo.common.models.ImageHolder getCover()
   public java.lang.String getSubtitle()
   public java.util.Map getExtras()
@@ -5782,10 +5784,22 @@ Methods:
   public final dev.brahmkshatriya.echo.common.models.Track$Type component3()
   public final dev.brahmkshatriya.echo.common.models.ImageHolder component4()
   public final java.util.List component5()
-  public static dev.brahmkshatriya.echo.common.models.Track copy$default(dev.brahmkshatriya.echo.common.models.Track, java.lang.String, java.lang.String, dev.brahmkshatriya.echo.common.models.Track$Type, dev.brahmkshatriya.echo.common.models.ImageHolder, java.util.List, dev.brahmkshatriya.echo.common.models.Album, java.lang.Long, java.lang.Long, java.lang.Long, dev.brahmkshatriya.echo.common.models.Date, java.lang.String, dev.brahmkshatriya.echo.common.models.ImageHolder, java.util.List, java.lang.String, java.lang.Long, java.lang.Long, dev.brahmkshatriya.echo.common.models.Date, boolean, java.lang.String, java.util.Map, dev.brahmkshatriya.echo.common.models.Track$Playable, java.util.List, boolean, boolean, boolean, boolean, boolean, boolean, int, java.lang.Object)
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_()
   public static final [Lkotlin.Lazy; access$get$childSerializers$cp()
-  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Track, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
+  public java.lang.String getTitle()
+  public final java.util.List getArtists()
+  public final dev.brahmkshatriya.echo.common.models.Album getAlbum()
+  public boolean isExplicit()
+  public final java.lang.Long getAlbumDiscNumber()
+  public final java.lang.Long getAlbumOrderNumber()
+  public final java.lang.String getIsrc()
+  public boolean isRadioSupported()
+  public boolean isFollowable()
+  public boolean isSaveable()
+  public boolean isLikeable()
+  public boolean isHideable()
+  public boolean isShareable()
+  public dev.brahmkshatriya.echo.common.models.ImageHolder getBackground()
   public java.lang.String getSubtitleWithOutE()
   public final dev.brahmkshatriya.echo.common.models.Album component6()
   public final java.lang.Long component7()
@@ -5795,21 +5809,10 @@ Methods:
   public final dev.brahmkshatriya.echo.common.models.ImageHolder component12()
   public final java.util.List component13()
   public final java.lang.String component14()
-  public boolean isExplicit()
   public java.lang.String getSubtitleWithE()
   public boolean sameAs(dev.brahmkshatriya.echo.common.models.EchoMediaItem)
   public dev.brahmkshatriya.echo.common.models.Shelf$Item toShelf()
   public dev.brahmkshatriya.echo.common.models.EchoMediaItem copyMediaItem(java.lang.String, java.lang.String, dev.brahmkshatriya.echo.common.models.ImageHolder, java.lang.String, java.lang.String, java.util.Map, boolean, boolean, boolean)
-  public dev.brahmkshatriya.echo.common.models.ImageHolder getBackground()
-  public java.lang.String getTitle()
-  public boolean isRadioSupported()
-  public boolean isFollowable()
-  public boolean isSaveable()
-  public boolean isLikeable()
-  public boolean isHideable()
-  public boolean isShareable()
-  public final dev.brahmkshatriya.echo.common.models.Album getAlbum()
-  public final java.util.List getArtists()
   public final dev.brahmkshatriya.echo.common.models.Date getReleaseDate()
   public final java.lang.Long component15()
   public final java.lang.Long component16()
@@ -5822,13 +5825,10 @@ Methods:
   private static final java.util.List servers_delegate$lambda$3(dev.brahmkshatriya.echo.common.models.Track)
   private static final java.util.List backgrounds_delegate$lambda$5(dev.brahmkshatriya.echo.common.models.Track)
   private static final java.lang.CharSequence subtitleWithOutE$lambda$7$lambda$6(dev.brahmkshatriya.echo.common.models.Artist)
+  public final dev.brahmkshatriya.echo.common.models.Date getPlaylistAddedDate()
   public final java.lang.Long getPlayedDuration()
   public final java.lang.Long getPlays()
   public final java.util.List getGenres()
-  public final java.lang.String getIsrc()
-  public final java.lang.Long getAlbumOrderNumber()
-  public final java.lang.Long getAlbumDiscNumber()
-  public final dev.brahmkshatriya.echo.common.models.Date getPlaylistAddedDate()
   public final java.util.List getStreamables()
   public final java.util.List getSubtitles()
   public final java.util.List getServers()
@@ -5869,12 +5869,12 @@ Fields:
 
 Methods:
   public final kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
+  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Track)
+  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+  public final dev.brahmkshatriya.echo.common.models.Track deserialize(kotlinx.serialization.encoding.Decoder)
   public final [Lkotlinx.serialization.KSerializer; childSerializers()
   public [Lkotlinx.serialization.KSerializer; typeParametersSerializers()
-  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Track)
-  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
-  public final dev.brahmkshatriya.echo.common.models.Track deserialize(kotlinx.serialization.encoding.Decoder)
-  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
 ========================================
 
 ========================================
@@ -5964,9 +5964,9 @@ Methods:
   public java.lang.String toString()
   public int hashCode()
   public final dev.brahmkshatriya.echo.common.models.Track$Playable$No copy(java.lang.String)
-  public final java.lang.String component1()
   public static dev.brahmkshatriya.echo.common.models.Track$Playable$No copy$default(dev.brahmkshatriya.echo.common.models.Track$Playable$No, java.lang.String, int, java.lang.Object)
   public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.Track$Playable$No, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
+  public final java.lang.String component1()
 ========================================
 
 ========================================
@@ -5984,12 +5984,12 @@ Fields:
 
 Methods:
   public final kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
+  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Track$Playable$No)
+  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+  public final dev.brahmkshatriya.echo.common.models.Track$Playable$No deserialize(kotlinx.serialization.encoding.Decoder)
   public final [Lkotlinx.serialization.KSerializer; childSerializers()
   public [Lkotlinx.serialization.KSerializer; typeParametersSerializers()
-  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.Track$Playable$No)
-  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
-  public final dev.brahmkshatriya.echo.common.models.Track$Playable$No deserialize(kotlinx.serialization.encoding.Decoder)
-  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
 ========================================
 
 ========================================
@@ -6125,18 +6125,18 @@ Methods:
   public int hashCode()
   public final dev.brahmkshatriya.echo.common.models.EchoMediaItem getContext()
   public final dev.brahmkshatriya.echo.common.models.TrackDetails copy(java.lang.String, dev.brahmkshatriya.echo.common.models.Track, dev.brahmkshatriya.echo.common.models.EchoMediaItem, long, java.lang.Long)
-  public final long getCurrentPosition()
-  public final java.lang.Long getTotalDuration()
+  public static dev.brahmkshatriya.echo.common.models.TrackDetails copy$default(dev.brahmkshatriya.echo.common.models.TrackDetails, java.lang.String, dev.brahmkshatriya.echo.common.models.Track, dev.brahmkshatriya.echo.common.models.EchoMediaItem, long, java.lang.Long, int, java.lang.Object)
+  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.TrackDetails, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
   public final java.lang.String component1()
   public final dev.brahmkshatriya.echo.common.models.Track component2()
   public final dev.brahmkshatriya.echo.common.models.EchoMediaItem component3()
   public final long component4()
   public final java.lang.Long component5()
-  public static dev.brahmkshatriya.echo.common.models.TrackDetails copy$default(dev.brahmkshatriya.echo.common.models.TrackDetails, java.lang.String, dev.brahmkshatriya.echo.common.models.Track, dev.brahmkshatriya.echo.common.models.EchoMediaItem, long, java.lang.Long, int, java.lang.Object)
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_()
   public static final [Lkotlin.Lazy; access$get$childSerializers$cp()
-  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.TrackDetails, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
   public final dev.brahmkshatriya.echo.common.models.Track getTrack()
+  public final long getCurrentPosition()
+  public final java.lang.Long getTotalDuration()
 ========================================
 
 ========================================
@@ -6154,12 +6154,12 @@ Fields:
 
 Methods:
   public final kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
+  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.TrackDetails)
+  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+  public final dev.brahmkshatriya.echo.common.models.TrackDetails deserialize(kotlinx.serialization.encoding.Decoder)
   public final [Lkotlinx.serialization.KSerializer; childSerializers()
   public [Lkotlinx.serialization.KSerializer; typeParametersSerializers()
-  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.TrackDetails)
-  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
-  public final dev.brahmkshatriya.echo.common.models.TrackDetails deserialize(kotlinx.serialization.encoding.Decoder)
-  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
 ========================================
 
 ========================================
@@ -6205,6 +6205,8 @@ Methods:
   public int hashCode()
   public final java.lang.String getId()
   public final dev.brahmkshatriya.echo.common.models.User copy(java.lang.String, java.lang.String, dev.brahmkshatriya.echo.common.models.ImageHolder, java.lang.String, java.util.Map)
+  public static dev.brahmkshatriya.echo.common.models.User copy$default(dev.brahmkshatriya.echo.common.models.User, java.lang.String, java.lang.String, dev.brahmkshatriya.echo.common.models.ImageHolder, java.lang.String, java.util.Map, int, java.lang.Object)
+  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.User, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
   public final dev.brahmkshatriya.echo.common.models.ImageHolder getCover()
   public final java.lang.String getSubtitle()
   public final java.util.Map getExtras()
@@ -6213,11 +6215,9 @@ Methods:
   public final dev.brahmkshatriya.echo.common.models.ImageHolder component3()
   public final java.lang.String component4()
   public final java.util.Map component5()
-  public static dev.brahmkshatriya.echo.common.models.User copy$default(dev.brahmkshatriya.echo.common.models.User, java.lang.String, java.lang.String, dev.brahmkshatriya.echo.common.models.ImageHolder, java.lang.String, java.util.Map, int, java.lang.Object)
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_()
   private static final kotlinx.serialization.KSerializer _childSerializers$_anonymous_$0()
   public static final [Lkotlin.Lazy; access$get$childSerializers$cp()
-  public static final void write$Self$common(dev.brahmkshatriya.echo.common.models.User, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor)
 ========================================
 
 ========================================
@@ -6235,12 +6235,12 @@ Fields:
 
 Methods:
   public final kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
+  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.User)
+  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+  public final dev.brahmkshatriya.echo.common.models.User deserialize(kotlinx.serialization.encoding.Decoder)
   public final [Lkotlinx.serialization.KSerializer; childSerializers()
   public [Lkotlinx.serialization.KSerializer; typeParametersSerializers()
-  public final void serialize(kotlinx.serialization.encoding.Encoder, dev.brahmkshatriya.echo.common.models.User)
-  public volatile void serialize(kotlinx.serialization.encoding.Encoder, java.lang.Object)
-  public final dev.brahmkshatriya.echo.common.models.User deserialize(kotlinx.serialization.encoding.Decoder)
-  public volatile java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
 ========================================
 
 ========================================
@@ -6371,8 +6371,8 @@ Constructors:
 Fields:
 
 Methods:
-  public abstract java.lang.Object getSettingItems(kotlin.coroutines.Continuation)
   public abstract void setSettings(dev.brahmkshatriya.echo.common.settings.Settings)
+  public abstract java.lang.Object getSettingItems(kotlin.coroutines.Continuation)
 ========================================
 
 ========================================
@@ -6439,10 +6439,10 @@ Methods:
   public int hashCode()
   public java.lang.String getKey()
   public final dev.brahmkshatriya.echo.common.settings.SettingCategory copy(java.lang.String, java.lang.String, java.util.List)
+  public static dev.brahmkshatriya.echo.common.settings.SettingCategory copy$default(dev.brahmkshatriya.echo.common.settings.SettingCategory, java.lang.String, java.lang.String, java.util.List, int, java.lang.Object)
   public final java.lang.String component1()
   public final java.lang.String component2()
   public final java.util.List component3()
-  public static dev.brahmkshatriya.echo.common.settings.SettingCategory copy$default(dev.brahmkshatriya.echo.common.settings.SettingCategory, java.lang.String, java.lang.String, java.util.List, int, java.lang.Object)
   public java.lang.String getTitle()
   public final java.util.List getItems()
 ========================================
@@ -6468,12 +6468,12 @@ Methods:
   public int hashCode()
   public java.lang.String getKey()
   public final dev.brahmkshatriya.echo.common.settings.SettingItem copy(java.lang.String, java.lang.String, java.lang.String)
+  public final java.lang.String getSummary()
+  public static dev.brahmkshatriya.echo.common.settings.SettingItem copy$default(dev.brahmkshatriya.echo.common.settings.SettingItem, java.lang.String, java.lang.String, java.lang.String, int, java.lang.Object)
   public final java.lang.String component1()
   public final java.lang.String component2()
   public final java.lang.String component3()
-  public static dev.brahmkshatriya.echo.common.settings.SettingItem copy$default(dev.brahmkshatriya.echo.common.settings.SettingItem, java.lang.String, java.lang.String, java.lang.String, int, java.lang.Object)
   public java.lang.String getTitle()
-  public final java.lang.String getSummary()
 ========================================
 
 ========================================
@@ -6500,18 +6500,18 @@ Methods:
   public int hashCode()
   public java.lang.String getKey()
   public final dev.brahmkshatriya.echo.common.settings.SettingList copy(java.lang.String, java.lang.String, java.lang.String, java.util.List, java.util.List, java.lang.Integer)
+  public final java.util.List getEntryTitles()
+  public final java.util.List getEntryValues()
+  public final java.lang.Integer getDefaultEntryIndex()
+  public final java.lang.String getSummary()
+  public static dev.brahmkshatriya.echo.common.settings.SettingList copy$default(dev.brahmkshatriya.echo.common.settings.SettingList, java.lang.String, java.lang.String, java.lang.String, java.util.List, java.util.List, java.lang.Integer, int, java.lang.Object)
   public final java.lang.String component1()
   public final java.lang.String component2()
   public final java.lang.String component3()
   public final java.util.List component4()
   public final java.util.List component5()
-  public static dev.brahmkshatriya.echo.common.settings.SettingList copy$default(dev.brahmkshatriya.echo.common.settings.SettingList, java.lang.String, java.lang.String, java.lang.String, java.util.List, java.util.List, java.lang.Integer, int, java.lang.Object)
-  public final java.lang.Integer component6()
   public java.lang.String getTitle()
-  public final java.lang.String getSummary()
-  public final java.util.List getEntryTitles()
-  public final java.util.List getEntryValues()
-  public final java.lang.Integer getDefaultEntryIndex()
+  public final java.lang.Integer component6()
 ========================================
 
 ========================================
@@ -6538,18 +6538,18 @@ Methods:
   public int hashCode()
   public java.lang.String getKey()
   public final dev.brahmkshatriya.echo.common.settings.SettingMultipleChoice copy(java.lang.String, java.lang.String, java.lang.String, java.util.List, java.util.List, java.util.Set)
+  public final java.util.List getEntryTitles()
+  public final java.util.List getEntryValues()
+  public final java.lang.String getSummary()
+  public static dev.brahmkshatriya.echo.common.settings.SettingMultipleChoice copy$default(dev.brahmkshatriya.echo.common.settings.SettingMultipleChoice, java.lang.String, java.lang.String, java.lang.String, java.util.List, java.util.List, java.util.Set, int, java.lang.Object)
   public final java.lang.String component1()
   public final java.lang.String component2()
   public final java.lang.String component3()
   public final java.util.List component4()
   public final java.util.List component5()
-  public static dev.brahmkshatriya.echo.common.settings.SettingMultipleChoice copy$default(dev.brahmkshatriya.echo.common.settings.SettingMultipleChoice, java.lang.String, java.lang.String, java.lang.String, java.util.List, java.util.List, java.util.Set, int, java.lang.Object)
-  public final java.util.Set component6()
   public java.lang.String getTitle()
-  public final java.lang.String getSummary()
+  public final java.util.Set component6()
   public final java.util.Set getDefaultEntryIndices()
-  public final java.util.List getEntryTitles()
-  public final java.util.List getEntryValues()
 ========================================
 
 ========================================
@@ -6574,14 +6574,14 @@ Methods:
   public int hashCode()
   public java.lang.String getKey()
   public final dev.brahmkshatriya.echo.common.settings.SettingOnClick copy(java.lang.String, java.lang.String, java.lang.String, kotlin.jvm.functions.Function1)
+  public final java.lang.String getSummary()
+  public static dev.brahmkshatriya.echo.common.settings.SettingOnClick copy$default(dev.brahmkshatriya.echo.common.settings.SettingOnClick, java.lang.String, java.lang.String, java.lang.String, kotlin.jvm.functions.Function1, int, java.lang.Object)
   public final java.lang.String component1()
   public final java.lang.String component2()
   public final java.lang.String component3()
   public final kotlin.jvm.functions.Function1 component4()
-  public static dev.brahmkshatriya.echo.common.settings.SettingOnClick copy$default(dev.brahmkshatriya.echo.common.settings.SettingOnClick, java.lang.String, java.lang.String, java.lang.String, kotlin.jvm.functions.Function1, int, java.lang.Object)
-  public java.lang.String getTitle()
-  public final java.lang.String getSummary()
   public final kotlin.jvm.functions.Function1 getOnClick()
+  public java.lang.String getTitle()
 ========================================
 
 ========================================
@@ -6612,17 +6612,17 @@ Methods:
   public final dev.brahmkshatriya.echo.common.settings.SettingSlider copy(java.lang.String, java.lang.String, java.lang.String, java.lang.Integer, int, int, java.lang.Integer, boolean)
   public final java.lang.Integer getDefaultValue()
   public final int getFrom()
+  public final java.lang.String getSummary()
+  public static dev.brahmkshatriya.echo.common.settings.SettingSlider copy$default(dev.brahmkshatriya.echo.common.settings.SettingSlider, java.lang.String, java.lang.String, java.lang.String, java.lang.Integer, int, int, java.lang.Integer, boolean, int, java.lang.Object)
   public final java.lang.String component1()
   public final java.lang.String component2()
   public final java.lang.String component3()
   public final java.lang.Integer component4()
   public final int component5()
-  public static dev.brahmkshatriya.echo.common.settings.SettingSlider copy$default(dev.brahmkshatriya.echo.common.settings.SettingSlider, java.lang.String, java.lang.String, java.lang.String, java.lang.Integer, int, int, java.lang.Integer, boolean, int, java.lang.Object)
+  public java.lang.String getTitle()
   public final int component6()
   public final java.lang.Integer component7()
   public final boolean component8()
-  public java.lang.String getTitle()
-  public final java.lang.String getSummary()
   public final int getTo()
   public final java.lang.Integer getSteps()
   public final boolean getAllowOverride()
@@ -6651,13 +6651,13 @@ Methods:
   public java.lang.String getKey()
   public final dev.brahmkshatriya.echo.common.settings.SettingSwitch copy(java.lang.String, java.lang.String, java.lang.String, boolean)
   public final boolean getDefaultValue()
+  public final java.lang.String getSummary()
+  public static dev.brahmkshatriya.echo.common.settings.SettingSwitch copy$default(dev.brahmkshatriya.echo.common.settings.SettingSwitch, java.lang.String, java.lang.String, java.lang.String, boolean, int, java.lang.Object)
   public final java.lang.String component1()
   public final java.lang.String component2()
   public final java.lang.String component3()
   public final boolean component4()
-  public static dev.brahmkshatriya.echo.common.settings.SettingSwitch copy$default(dev.brahmkshatriya.echo.common.settings.SettingSwitch, java.lang.String, java.lang.String, java.lang.String, boolean, int, java.lang.Object)
   public java.lang.String getTitle()
-  public final java.lang.String getSummary()
 ========================================
 
 ========================================
@@ -6683,13 +6683,13 @@ Methods:
   public java.lang.String getKey()
   public final dev.brahmkshatriya.echo.common.settings.SettingTextInput copy(java.lang.String, java.lang.String, java.lang.String, java.lang.String)
   public final java.lang.String getDefaultValue()
+  public final java.lang.String getSummary()
+  public static dev.brahmkshatriya.echo.common.settings.SettingTextInput copy$default(dev.brahmkshatriya.echo.common.settings.SettingTextInput, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.Object)
   public final java.lang.String component1()
   public final java.lang.String component2()
   public final java.lang.String component3()
   public final java.lang.String component4()
-  public static dev.brahmkshatriya.echo.common.settings.SettingTextInput copy$default(dev.brahmkshatriya.echo.common.settings.SettingTextInput, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.Object)
   public java.lang.String getTitle()
-  public final java.lang.String getSummary()
 ========================================
 
 ========================================
@@ -6708,8 +6708,8 @@ Methods:
   public abstract java.lang.Integer getInt(java.lang.String)
   public abstract void putInt(java.lang.String, java.lang.Integer)
   public abstract java.lang.String getString(java.lang.String)
-  public abstract java.util.Set getStringSet(java.lang.String)
   public abstract void putString(java.lang.String, java.lang.String)
+  public abstract java.util.Set getStringSet(java.lang.String)
   public abstract void putStringSet(java.lang.String, java.util.Set)
 ========================================
 
